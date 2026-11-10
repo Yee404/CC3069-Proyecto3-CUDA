@@ -1,0 +1,33 @@
+# Proyecto 3 - CC3069 - Mejorando algoritmos con CUDA
+# Python 3.12 (ver PLAN.md, seccion "Entorno")
+# Fijar versiones con `pip freeze > requirements-lock.txt` cuando el entorno funcione.
+
+# Rasters y datos geoespaciales (heredado del Laboratorio 4)
+openeo
+rasterio
+pyproj
+shapely
+
+# Analisis de datos
+numpy
+pandas
+scipy
+
+# Machine Learning
+scikit-learn
+xgboost
+shap
+
+# CUDA Python
+numba
+numba-cuda[cu12]
+cupy-cuda12x
+
+# Visualizacion
+matplotlib
+seaborn
+folium
+
+# Notebooks
+jupyter
+ipykernel

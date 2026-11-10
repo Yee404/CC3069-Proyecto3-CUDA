@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Entorno
+.venv/
+.env
+
+# Datos (se descargan con lab4/download_sentinel.py o se comparten fuera del repo)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Salidas pesadas de perfilado
+*.nsys-rep
+*.qdrep
+*.sqlite
+
+# IA
+.claude/
+.agents/
