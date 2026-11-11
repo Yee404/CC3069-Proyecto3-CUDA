@@ -23,3 +23,8 @@ data/processed/*
 # IA
 .claude/
 .agents/
+
+# Documentos internos del equipo (no se versionan)
+PLAN.md
+CONTEXTO.md
+CONTEXTO_INFORME.md
