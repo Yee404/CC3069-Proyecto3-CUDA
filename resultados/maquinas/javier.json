@@ -1,0 +1,21 @@
+{
+  "cpu": "AMD Ryzen 5 5600G with Radeon Graphics",
+  "nucleos_fisicos": 6,
+  "nucleos_logicos": 12,
+  "ram_gb": 15.4,
+  "gpu": "sin GPU NVIDIA (nvidia-smi no disponible)",
+  "sistema": "Windows 11 (10.0.26300)",
+  "python": "3.12.10",
+  "bibliotecas": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "rasterio": "1.5.2",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "numba": "0.68.1",
+    "numba-cuda": "0.30.4",
+    "cupy-cuda12x": "14.2.0"
+  }
+}

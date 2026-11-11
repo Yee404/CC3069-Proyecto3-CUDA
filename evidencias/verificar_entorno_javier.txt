@@ -1,0 +1,7 @@
+Python                3.12.10
+Sistema               Windows 11
+nvidia-smi            NO DISPONIBLE ([WinError 2] El sistema no puede encontrar el archivo especificado)
+numba                 0.68.1
+cuda.is_available()   False
+cupy                  ERROR: cudaErrorInsufficientDriver: CUDA driver version is insufficient for CUDA runtime version
+xgboost               3.4.1 (CAYO A CPU: no hay GPU visible)
