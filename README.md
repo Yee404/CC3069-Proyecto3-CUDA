@@ -28,4 +28,14 @@ Copernicus Data Space). Al final, `dataset_ml.csv` debe tener 401 656 filas:
 .venv\Scripts\python lab4\dataset_ml.py
 ```
 
+Después se generan las matrices y las particiones fijas que usan CPU y GPU, y se verifica
+que coincidan con el laboratorio (401 656 filas, 4 873 positivos, hash del conjunto de prueba):
+
+```bash
+.venv\Scripts\python -m src.preparacion_cpu.dataset
+```
+
+Si todo sale `[ok]`, `resultados/validacion/particiones.csv` debe coincidir con la versión del
+repositorio (mismas huellas en las tres máquinas).
+
 Los comandos se ejecutan desde la raíz del repositorio.
