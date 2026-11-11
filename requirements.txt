@@ -23,6 +23,9 @@ numba
 numba-cuda[cu12]
 cupy-cuda12x
 
+# Evidencias de hardware (uso de CPU por nucleo, ficha de la maquina)
+psutil
+
 # Visualizacion
 matplotlib
 seaborn

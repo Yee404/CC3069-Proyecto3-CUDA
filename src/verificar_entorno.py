@@ -62,13 +62,21 @@ def main() -> None:
         _linea("cupy", f"ERROR: {error}")
 
     try:
-        import xgboost as xgb
+        import warnings
+
         import numpy as np
+        import xgboost as xgb
 
         X = np.random.default_rng(0).random((1000, 5), dtype=np.float32)
         y = (X[:, 0] > 0.5).astype(np.int8)
-        xgb.XGBClassifier(n_estimators=5, tree_method="hist", device="cuda").fit(X, y)
-        _linea("xgboost", f"{xgb.__version__} (device='cuda' OK)")
+        # Sin GPU visible, XGBoost no falla: avisa y entrena en CPU. Se capturan los
+        # avisos para no reportar un "OK" falso.
+        with warnings.catch_warnings(record=True) as avisos:
+            warnings.simplefilter("always")
+            xgb.XGBClassifier(n_estimators=5, tree_method="hist", device="cuda").fit(X, y)
+        cayo_a_cpu = any("GPU" in str(a.message) for a in avisos)
+        estado = "CAYO A CPU: no hay GPU visible" if cayo_a_cpu else "device='cuda' OK"
+        _linea("xgboost", f"{xgb.__version__} ({estado})")
     except Exception as error:  # noqa: BLE001
         _linea("xgboost", f"ERROR: {error}")
 
