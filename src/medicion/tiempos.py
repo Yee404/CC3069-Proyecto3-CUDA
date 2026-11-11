@@ -77,13 +77,22 @@ def medir(
     )
 
 
-def guardar(mediciones: list[Medicion], nombre_archivo: str) -> pd.DataFrame:
-    """Agrega las mediciones a resultados/tiempos/<nombre_archivo> (CSV)."""
+def guardar(
+    mediciones: list[Medicion], nombre_archivo: str, sobrescribir: bool = False
+) -> pd.DataFrame:
+    """Agrega las mediciones a resultados/tiempos/<nombre_archivo> (CSV).
+
+    Con `sobrescribir=True` el archivo se reemplaza en lugar de agregar filas, para
+    que volver a correr un script no duplique las mediciones.
+    """
     destino = RESULTADOS / "tiempos" / nombre_archivo
     destino.parent.mkdir(parents=True, exist_ok=True)
     tabla = pd.DataFrame([asdict(m) for m in mediciones])
     tabla["corridas_s"] = tabla["corridas_s"].apply(lambda c: ";".join(f"{v:.6f}" for v in c))
-    tabla.to_csv(destino, mode="a", header=not destino.exists(), index=False)
+    if sobrescribir:
+        tabla.to_csv(destino, index=False)
+    else:
+        tabla.to_csv(destino, mode="a", header=not destino.exists(), index=False)
     return tabla
 
 
