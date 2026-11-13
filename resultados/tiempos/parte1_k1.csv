@@ -1,0 +1,17 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+K1 Atitlan,CPU secuencial,1.294873460009694,0.12026482245774063,1.213668;1.235371;1.249676;1.268670;1.506982,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; lab4 NumPy
+K1 Atitlan,CPU 1 nucleo,0.3296960400068201,0.047399963769610066,0.406173;0.283213;0.339892;0.303852;0.315351,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; Numba njit (fusión sin paralelismo)
+K1 Atitlan,CPU multinucleo,0.10868879999616184,0.003798901503385542,0.109560;0.108050;0.113371;0.109589;0.102873,"Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; Numba prange, 16 hilos"
+K1 copia CPU->GPU Atitlan,GPU,0.09494339904785157,0.015556230567170154,0.122390;0.084050;0.091187;0.088534;0.088556,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; eventos CUDA
+K1 kernel Atitlan,GPU,0.004479942512512207,3.156614584257137e-05,0.004473;0.004464;0.004536;0.004460;0.004467,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; eventos CUDA
+K1 copia GPU->CPU Atitlan,GPU,0.07709508514404297,0.003608291798004368,0.078641;0.071288;0.077613;0.076883;0.081051,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; eventos CUDA
+K1 total con transferencias Atitlan,GPU,0.1940989000024274,0.01875570904903921,0.223956;0.172481;0.195459;0.188833;0.189766,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; modo simple; reloj de pared (incluye reservar memoria en GPU)
+K1 total con streams Atitlan,GPU,0.17048920000670478,0.002348336079473105,0.172575;0.169538;0.171854;0.171671;0.166809,Atitlan; 11 fechas; malla 876x1380; cubo 479 MB; 2 fechas por lote; incluye bloquear memoria del host
+K1 Amatitlan,CPU secuencial,0.39757399999652987,0.05577688715990023,0.472454;0.403190;0.404932;0.391675;0.315619,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; lab4 NumPy
+K1 Amatitlan,CPU 1 nucleo,0.05778750000172295,0.0019930405630994483,0.060261;0.056307;0.059039;0.057987;0.055344,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; Numba njit (fusión sin paralelismo)
+K1 Amatitlan,CPU multinucleo,0.0242032999987714,0.0013720791344231688,0.025745;0.023186;0.024198;0.022532;0.025355,"Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; Numba prange, 16 hilos"
+K1 copia CPU->GPU Amatitlan,GPU,0.022080332946777345,0.0011404011832640826,0.021150;0.021518;0.023971;0.022309;0.021454,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; eventos CUDA
+K1 kernel Amatitlan,GPU,0.0012029696226119994,2.5010024749034114e-05,0.001244;0.001190;0.001208;0.001188;0.001185,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; eventos CUDA
+K1 copia GPU->CPU Amatitlan,GPU,0.01671543655395508,0.0006958209918188988,0.016370;0.016310;0.017369;0.017546;0.015983,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; eventos CUDA
+K1 total con transferencias Amatitlan,GPU,0.04469781999941915,0.0029437101826843568,0.046755;0.041873;0.045421;0.048031;0.041409,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; modo simple; reloj de pared (incluye reservar memoria en GPU)
+K1 total con streams Amatitlan,GPU,0.04083887999295257,0.0008755006421522924,0.042165;0.041050;0.039869;0.040837;0.040273,Amatitlan; 11 fechas; malla 459x681; cubo 124 MB; 2 fechas por lote; incluye bloquear memoria del host

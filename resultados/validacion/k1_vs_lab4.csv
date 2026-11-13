@@ -1,0 +1,65 @@
+lago,version,capa,tipo,error_abs_max,error_abs_medio,nan_distintos,pixeles_distintos,pct_distintos,pixeles_total
+Atitlan,CPU 1 nucleo,ndvi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,CPU 1 nucleo,ndwi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,CPU 1 nucleo,ndci,float32,0.0,0.0,0.0,,,13297680
+Atitlan,CPU 1 nucleo,fai,float32,5.960464477539063e-08,4.417862786869514e-09,0.0,,,13297680
+Atitlan,CPU 1 nucleo,chla,float32,6.103515625e-05,3.4528665375636005e-07,0.0,,,13297680
+Atitlan,CPU 1 nucleo,agua,mascara,,,,0.0,0.0,13297680
+Atitlan,CPU 1 nucleo,validos,mascara,,,,0.0,0.0,13297680
+Atitlan,CPU 1 nucleo,y_alta,mascara,,,,0.0,0.0,13297680
+Atitlan,CPU multinucleo,ndvi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,CPU multinucleo,ndwi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,CPU multinucleo,ndci,float32,0.0,0.0,0.0,,,13297680
+Atitlan,CPU multinucleo,fai,float32,5.960464477539063e-08,4.417862786869514e-09,0.0,,,13297680
+Atitlan,CPU multinucleo,chla,float32,6.103515625e-05,3.4528665375636005e-07,0.0,,,13297680
+Atitlan,CPU multinucleo,agua,mascara,,,,0.0,0.0,13297680
+Atitlan,CPU multinucleo,validos,mascara,,,,0.0,0.0,13297680
+Atitlan,CPU multinucleo,y_alta,mascara,,,,0.0,0.0,13297680
+Atitlan,GPU simple,ndvi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,GPU simple,ndwi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,GPU simple,ndci,float32,0.0,0.0,0.0,,,13297680
+Atitlan,GPU simple,fai,float32,5.21540641784668e-08,4.69549439854754e-09,0.0,,,13297680
+Atitlan,GPU simple,chla,float32,6.103515625e-05,6.324682380761663e-07,0.0,,,13297680
+Atitlan,GPU simple,agua,mascara,,,,0.0,0.0,13297680
+Atitlan,GPU simple,validos,mascara,,,,0.0,0.0,13297680
+Atitlan,GPU simple,y_alta,mascara,,,,0.0,0.0,13297680
+Atitlan,GPU streams,ndvi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,GPU streams,ndwi,float32,0.0,0.0,0.0,,,13297680
+Atitlan,GPU streams,ndci,float32,0.0,0.0,0.0,,,13297680
+Atitlan,GPU streams,fai,float32,5.21540641784668e-08,4.69549439854754e-09,0.0,,,13297680
+Atitlan,GPU streams,chla,float32,6.103515625e-05,6.324682380761663e-07,0.0,,,13297680
+Atitlan,GPU streams,agua,mascara,,,,0.0,0.0,13297680
+Atitlan,GPU streams,validos,mascara,,,,0.0,0.0,13297680
+Atitlan,GPU streams,y_alta,mascara,,,,0.0,0.0,13297680
+Amatitlan,CPU 1 nucleo,ndvi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,CPU 1 nucleo,ndwi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,CPU 1 nucleo,ndci,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,CPU 1 nucleo,fai,float32,2.9802322387695312e-08,4.123768450609398e-09,0.0,,,3438369
+Amatitlan,CPU 1 nucleo,chla,float32,6.103515625e-05,2.258719262070171e-07,0.0,,,3438369
+Amatitlan,CPU 1 nucleo,agua,mascara,,,,0.0,0.0,3438369
+Amatitlan,CPU 1 nucleo,validos,mascara,,,,0.0,0.0,3438369
+Amatitlan,CPU 1 nucleo,y_alta,mascara,,,,0.0,0.0,3438369
+Amatitlan,CPU multinucleo,ndvi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,CPU multinucleo,ndwi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,CPU multinucleo,ndci,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,CPU multinucleo,fai,float32,2.9802322387695312e-08,4.123768450609398e-09,0.0,,,3438369
+Amatitlan,CPU multinucleo,chla,float32,6.103515625e-05,2.258719262070171e-07,0.0,,,3438369
+Amatitlan,CPU multinucleo,agua,mascara,,,,0.0,0.0,3438369
+Amatitlan,CPU multinucleo,validos,mascara,,,,0.0,0.0,3438369
+Amatitlan,CPU multinucleo,y_alta,mascara,,,,0.0,0.0,3438369
+Amatitlan,GPU simple,ndvi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,GPU simple,ndwi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,GPU simple,ndci,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,GPU simple,fai,float32,5.960464477539063e-08,4.383636659406999e-09,0.0,,,3438369
+Amatitlan,GPU simple,chla,float32,6.103515625e-05,4.172483577877304e-07,0.0,,,3438369
+Amatitlan,GPU simple,agua,mascara,,,,0.0,0.0,3438369
+Amatitlan,GPU simple,validos,mascara,,,,0.0,0.0,3438369
+Amatitlan,GPU simple,y_alta,mascara,,,,0.0,0.0,3438369
+Amatitlan,GPU streams,ndvi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,GPU streams,ndwi,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,GPU streams,ndci,float32,0.0,0.0,0.0,,,3438369
+Amatitlan,GPU streams,fai,float32,5.960464477539063e-08,4.383636659406999e-09,0.0,,,3438369
+Amatitlan,GPU streams,chla,float32,6.103515625e-05,4.172483577877304e-07,0.0,,,3438369
+Amatitlan,GPU streams,agua,mascara,,,,0.0,0.0,3438369
+Amatitlan,GPU streams,validos,mascara,,,,0.0,0.0,3438369
+Amatitlan,GPU streams,y_alta,mascara,,,,0.0,0.0,3438369
