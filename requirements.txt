@@ -9,7 +9,9 @@ pyproj
 shapely
 
 # Analisis de datos
-numpy
+# numba-cuda 0.30.4 (la versión más reciente) todavía usa np.row_stack,
+# que NumPy eliminó en la 2.5.0; con NumPy 2.5 fallan todos los kernels de Numba.
+numpy<2.5
 pandas
 scipy
 
