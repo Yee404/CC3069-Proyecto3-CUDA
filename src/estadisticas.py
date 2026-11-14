@@ -13,6 +13,9 @@ Responsable: Nadissa.
 
 from __future__ import annotations
 
+import os
+from concurrent.futures import ThreadPoolExecutor
+
 import numpy as np
 import pandas as pd
 
@@ -83,8 +86,27 @@ def armar_tabla(
     return pd.DataFrame(filas, columns=COLUMNAS)
 
 
-def orden_en_cpu(valores_por_fecha: list[np.ndarray]) -> tuple[np.ndarray, np.ndarray]:
-    """Mediana y percentil 90 de cada fecha con NumPy (mismo método que el laboratorio)."""
-    medianas = np.array([np.median(v) if v.size else np.nan for v in valores_por_fecha])
-    p90 = np.array([np.percentile(v, 90) if v.size else np.nan for v in valores_por_fecha])
+def _orden_fecha(v: np.ndarray) -> tuple[float, float]:
+    if not v.size:
+        return np.nan, np.nan
+    return np.median(v), np.percentile(v, 90)
+
+
+def orden_en_cpu(
+    valores_por_fecha: list[np.ndarray], n_hilos: int | None = None
+) -> tuple[np.ndarray, np.ndarray]:
+    """Mediana y percentil 90 de cada fecha con NumPy (mismo método que el laboratorio).
+
+    Las fechas se reparten entre hilos: `np.median` y `np.percentile` ordenan con
+    `np.partition`, que libera el GIL, así que los hilos corren en paralelo y el
+    resultado es idéntico al de hacerlo fecha por fecha. Con `n_hilos=1` es secuencial.
+    """
+    n = min(n_hilos or os.cpu_count() or 1, max(len(valores_por_fecha), 1))
+    if n == 1:
+        pares = [_orden_fecha(v) for v in valores_por_fecha]
+    else:
+        with ThreadPoolExecutor(max_workers=n) as pool:
+            pares = list(pool.map(_orden_fecha, valores_por_fecha))
+    medianas = np.array([m for m, _ in pares], dtype=np.float64)
+    p90 = np.array([q for _, q in pares], dtype=np.float64)
     return medianas, p90

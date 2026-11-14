@@ -25,7 +25,8 @@ Mediana y percentil 90
 ----------------------
 Necesitan ordenar. Se copian al CPU solo los valores compactados (≈ 1.2 MB por fecha
 en Atitlán, contra ≈ 24 MB de las 5 capas) y se calculan con NumPy, que usa el mismo
-método que el laboratorio (`estadisticas.orden_en_cpu`). Se descartó CuPy aquí para
+método que el laboratorio (`estadisticas.orden_en_cpu`, con las fechas repartidas
+entre hilos del CPU). Se descartó CuPy aquí para
 no depender de que encuentre el CUDA Toolkit (NVRTC) en todas las máquinas.
 """
 
