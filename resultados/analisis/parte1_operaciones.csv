@@ -1,0 +1,23 @@
+operacion,funcion_lab4,entradas,salidas,aritmeticas,logicas,selecciones,detalle,lago,datos_procesados,repeticiones,operaciones_por_pixel,operaciones_totales
+Lectura y reflectancia,indices.leer_bandas,9 bandas L1C int16 + SCL,10 capas float32,9,10,10,"astype float32, nodata -> NaN (1 comparación + 1 where por capa), / 10 000 en las 9 bandas",Atitlan,píxeles de la malla × fechas,13297680,29,385632720
+Lectura y reflectancia,indices.leer_bandas,9 bandas L1C int16 + SCL,10 capas float32,9,10,10,"astype float32, nodata -> NaN (1 comparación + 1 where por capa), / 10 000 en las 9 bandas",Amatitlan,píxeles de la malla × fechas,3438369,29,99712701
+Mascara de validos,indices.mascara_valida,"B04, SCL",bool,0,18,0,2 isnan + 2 NOT + AND; isin con 6 clases SCL (6 comparaciones + 5 OR) + NOT; AND final,Atitlan,píxeles de la malla × fechas,13297680,18,239358240
+Mascara de validos,indices.mascara_valida,"B04, SCL",bool,0,18,0,2 isnan + 2 NOT + AND; isin con 6 clases SCL (6 comparaciones + 5 OR) + NOT; AND final,Amatitlan,píxeles de la malla × fechas,3438369,18,61890642
+NDVI,indices.ndvi,"B08, B04",float32,3,4,2,"(a-b)/(a+b) con a>0, b>0 y denominador != 0",Atitlan,píxeles de la malla × fechas,13297680,9,119679120
+NDVI,indices.ndvi,"B08, B04",float32,3,4,2,"(a-b)/(a+b) con a>0, b>0 y denominador != 0",Amatitlan,píxeles de la malla × fechas,3438369,9,30945321
+NDWI,indices.ndwi,"B03, B08",float32,3,4,2,"(a-b)/(a+b) con a>0, b>0 y denominador != 0",Atitlan,píxeles de la malla × fechas,13297680,9,119679120
+NDWI,indices.ndwi,"B03, B08",float32,3,4,2,"(a-b)/(a+b) con a>0, b>0 y denominador != 0",Amatitlan,píxeles de la malla × fechas,3438369,9,30945321
+NDCI,indices.ndci,"B05, B04",float32,3,4,2,"(a-b)/(a+b) con a>0, b>0 y denominador != 0",Atitlan,píxeles de la malla × fechas,13297680,9,119679120
+NDCI,indices.ndci,"B05, B04",float32,3,4,2,"(a-b)/(a+b) con a>0, b>0 y denominador != 0",Amatitlan,píxeles de la malla × fechas,3438369,9,30945321
+FAI,indices.fai,"B04, B07, B8A",float32,5,0,0,B07 - B04 - (B8A - B04) * 118 / 200,Atitlan,píxeles de la malla × fechas,13297680,5,66488400
+FAI,indices.fai,"B04, B07, B8A",float32,5,0,0,B07 - B04 - (B8A - B04) * 118 / 200,Amatitlan,píxeles de la malla × fechas,3438369,5,17191845
+Clorofila-a,indices.clorofila_a,NDCI,float32,8,1,0,"826.57 n^3 - 176.43 n^2 + 19 n + 4.071, recorte en 0",Atitlan,píxeles de la malla × fechas,13297680,9,119679120
+Clorofila-a,indices.clorofila_a,NDCI,float32,8,1,0,"826.57 n^3 - 176.43 n^2 + 19 n + 4.071, recorte en 0",Amatitlan,píxeles de la malla × fechas,3438369,9,30945321
+Mascara de agua (wbi),indices.mascara_agua,"B02, B03, B04, B08, B11, B12",bool,29,22,6,"5 diferencias normalizadas, AWEIsh, AWEInsh, DBSI; 6 umbrales con OR, filtro UABS (2 umbrales), isnan",Atitlan,píxeles de la malla × fechas,13297680,57,757967760
+Mascara de agua (wbi),indices.mascara_agua,"B02, B03, B04, B08, B11, B12",bool,29,22,6,"5 diferencias normalizadas, AWEIsh, AWEInsh, DBSI; 6 umbrales con OR, filtro UABS (2 umbrales), isnan",Amatitlan,píxeles de la malla × fechas,3438369,57,195987033
+Agua & validos,indices.calcular_indices,"wbi, validos",bool,0,1,0,AND de las dos máscaras,Atitlan,píxeles de la malla × fechas,13297680,1,13297680
+Agua & validos,indices.calcular_indices,"wbi, validos",bool,0,1,0,AND de las dos máscaras,Amatitlan,píxeles de la malla × fechas,3438369,1,3438369
+Mascara fija del lago,procesar.construir_mascara_lago,agua de las 11 fechas,bool (1 por lago),1,0,0,suma acumulada por fecha (1 suma por píxel y fecha); al final / 11 y >= 0.6,Atitlan,píxeles de la malla × fechas,13297680,1,13297680
+Mascara fija del lago,procesar.construir_mascara_lago,agua de las 11 fechas,bool (1 por lago),1,0,0,suma acumulada por fecha (1 suma por píxel y fecha); al final / 11 y >= 0.6,Amatitlan,píxeles de la malla × fechas,3438369,1,3438369
+K2 estadisticas por fecha,procesar.resumen,capas del espejo de agua,15 valores por fecha,6,5,0,"4 medias (nanmean), mediana y p90 (ordenamiento parcial), máximo, 2 porcentajes sobre umbral; sobre lago & validos",Atitlan,píxeles usables del lago,3355797,11,36913767
+K2 estadisticas por fecha,procesar.resumen,capas del espejo de agua,15 valores por fecha,6,5,0,"4 medias (nanmean), mediana y p90 (ordenamiento parcial), máximo, 2 porcentajes sobre umbral; sobre lago & validos",Amatitlan,píxeles usables del lago,399324,11,4392564

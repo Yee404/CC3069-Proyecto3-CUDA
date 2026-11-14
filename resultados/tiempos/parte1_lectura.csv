@@ -1,0 +1,7 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+Lectura Atitlan,CPU secuencial,1.7701599800027907,0.21631177708707094,1.899539;2.090261;1.622853;1.636473;1.601673,"modo=secuencial; trabajadores=1; 479 MB, 11 fechas"
+Lectura Atitlan,CPU multinucleo,2.191783180000493,0.020400743999258158,2.191634;2.220798;2.197320;2.164571;2.184593,"modo=procesos; trabajadores=11; 479 MB, 11 fechas"
+Lectura Atitlan,CPU multinucleo,0.47635780000127853,0.013031488908346697,0.483169;0.491391;0.457995;0.480257;0.468977,"modo=hilos; trabajadores=11; 479 MB, 11 fechas"
+Lectura Amatitlan,CPU secuencial,0.46733995999675243,0.015996421665261735,0.465532;0.475845;0.442507;0.485540;0.467276,"modo=secuencial; trabajadores=1; 124 MB, 11 fechas"
+Lectura Amatitlan,CPU multinucleo,1.70351692000404,0.011454347259776333,1.696335;1.706697;1.707442;1.688594;1.718517,"modo=procesos; trabajadores=11; 124 MB, 11 fechas"
+Lectura Amatitlan,CPU multinucleo,0.1979414600005839,0.004154207803506862,0.204474;0.199627;0.194384;0.195634;0.195588,"modo=hilos; trabajadores=11; 124 MB, 11 fechas"

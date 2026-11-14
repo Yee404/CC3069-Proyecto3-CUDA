@@ -1,0 +1,3 @@
+lago,fechas,forma_cubo,megabytes_cubo,bandas_distintas,pixeles_validos_distintos,ok,procesos_igual_a_secuencial,hilos_igual_a_secuencial
+Atitlan,11,11x9x876x1380,478.7,0,0,True,True,True
+Amatitlan,11,11x9x459x681,123.8,0,0,True,True,True

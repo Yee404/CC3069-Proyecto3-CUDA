@@ -1,0 +1,45 @@
+{
+  "laboratorio": {
+    "pr_auc_validacion": 0.9706,
+    "mejores": {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 31
+    },
+    "prueba": {
+      "precision": 0.7636,
+      "recall": 0.9877,
+      "f2": 0.9329,
+      "roc_auc": 0.9996,
+      "pr_auc": 0.966
+    }
+  },
+  "modelos": {
+    "HGB (laboratorio)": {
+      "mejores_hiperparametros": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 63
+      },
+      "pr_auc_validacion": 0.9745,
+      "pr_auc_prueba": 0.9732,
+      "arboles_modelo_final": 55
+    },
+    "XGBoost CPU 100 arboles": {
+      "mejores_hiperparametros": {
+        "learning_rate": 0.1,
+        "max_leaves": 31
+      },
+      "pr_auc_validacion": 0.9778,
+      "pr_auc_prueba": 0.9767,
+      "arboles_modelo_final": 100
+    },
+    "XGBoost CPU early stopping": {
+      "mejores_hiperparametros": {
+        "learning_rate": 0.1,
+        "max_leaves": 63
+      },
+      "pr_auc_validacion": 0.9696,
+      "pr_auc_prueba": 0.9686,
+      "arboles_modelo_final": 49
+    }
+  }
+}
