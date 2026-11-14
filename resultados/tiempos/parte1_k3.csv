@@ -1,0 +1,13 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+K3 Atitlan,CPU secuencial,0.04726511999615468,0.009418755205107616,0.041893;0.042459;0.063504;0.047462;0.041008,"Atitlan; 11 fechas; malla 876x1380; 60 bins en [0, 5.0]; NumPy como el notebook 02"
+K3 Atitlan,CPU 1 nucleo,0.022916340001393108,0.000281928465587043,0.023180;0.023112;0.022724;0.022521;0.023046,"Atitlan; 11 fechas; malla 876x1380; 60 bins en [0, 5.0]; Numba njit"
+K3 Atitlan,CPU multinucleo,0.004439900006400421,0.00035301244730341646,0.004206;0.004963;0.004649;0.004227;0.004154,"Atitlan; 11 fechas; malla 876x1380; 60 bins en [0, 5.0]; Numba prange"
+K3 kernel Atitlan,GPU,0.0011853440046310426,2.5357877338235875e-05,0.001231;0.001176;0.001174;0.001176;0.001171,"Atitlan; 11 fechas; malla 876x1380; 60 bins en [0, 5.0]; capas y máscara ya en GPU"
+K3 copia GPU->CPU (histogramas) Atitlan,GPU,5.8534400910139084e-05,3.2412077420031238e-06,0.000064;0.000058;0.000058;0.000055;0.000057,"Atitlan; 11 fechas; malla 876x1380; 60 bins en [0, 5.0]; capas y máscara ya en GPU"
+K3 Atitlan,GPU,0.0013439200061839073,3.025023136882446e-05,0.001387;0.001320;0.001313;0.001340;0.001360,"Atitlan; 11 fechas; malla 876x1380; 60 bins en [0, 5.0]; capas y máscara ya en GPU"
+K3 Amatitlan,CPU secuencial,0.007043900003191083,0.00037804201805289754,0.007510;0.007364;0.006727;0.006954;0.006665,"Amatitlan; 11 fechas; malla 459x681; 60 bins en [0, 25.0]; NumPy como el notebook 02"
+K3 Amatitlan,CPU 1 nucleo,0.003207819996168837,0.0006050559081069957,0.003961;0.003481;0.003367;0.002399;0.002831,"Amatitlan; 11 fechas; malla 459x681; 60 bins en [0, 25.0]; Numba njit"
+K3 Amatitlan,CPU multinucleo,0.0004603800072800368,2.547355056591872e-05,0.000450;0.000438;0.000495;0.000439;0.000479,"Amatitlan; 11 fechas; malla 459x681; 60 bins en [0, 25.0]; Numba prange"
+K3 kernel Amatitlan,GPU,0.0005591231942176819,3.1129568656809546e-06,0.000558;0.000559;0.000555;0.000563;0.000561,"Amatitlan; 11 fechas; malla 459x681; 60 bins en [0, 25.0]; capas y máscara ya en GPU"
+K3 copia GPU->CPU (histogramas) Amatitlan,GPU,0.00010293119847774506,9.005263569772822e-05,0.000263;0.000057;0.000076;0.000062;0.000055,"Amatitlan; 11 fechas; malla 459x681; 60 bins en [0, 25.0]; capas y máscara ya en GPU"
+K3 Amatitlan,GPU,0.000758839986519888,8.847280270718951e-05,0.000910;0.000720;0.000763;0.000706;0.000695,"Amatitlan; 11 fechas; malla 459x681; 60 bins en [0, 25.0]; capas y máscara ya en GPU"

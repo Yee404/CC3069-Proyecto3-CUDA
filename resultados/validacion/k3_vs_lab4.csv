@@ -1,0 +1,7 @@
+lago,version,conteos_distintos,dif_abs_max,total,total_ref
+Atitlan,CPU 1 nucleo,0,0,3355791,3355791
+Atitlan,CPU multinucleo,0,0,3355791,3355791
+Atitlan,GPU,0,0,3355791,3355791
+Amatitlan,CPU 1 nucleo,0,0,399324,399324
+Amatitlan,CPU multinucleo,0,0,399324,399324
+Amatitlan,GPU,0,0,399324,399324
