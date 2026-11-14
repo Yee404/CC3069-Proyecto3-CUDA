@@ -72,6 +72,20 @@ def configuracion(n_fechas: int, alto: int, ancho: int) -> tuple[tuple, tuple]:
     return grid, BLOQUE
 
 
+def k1_en_dispositivo(d_cubo, d_scl, stream=0):
+    """Lanza K1 sobre arreglos que ya están en la GPU y deja las salidas en la GPU.
+
+    Lo usa K2 (`reducciones.py`) para encadenar K1 -> máscara del lago -> K2 sin
+    copiar las capas de vuelta al CPU.
+    """
+    n_fechas, _, alto, ancho = d_cubo.shape
+    d_capas = cuda.device_array((n_fechas, len(CAPAS_FLOAT), alto, ancho), np.float32, stream=stream)
+    d_mascaras = cuda.device_array((n_fechas, len(CAPAS_MASCARA), alto, ancho), np.uint8, stream=stream)
+    grid, bloque = configuracion(n_fechas, alto, ancho)
+    k1_indices[grid, bloque, stream](d_cubo, d_scl, d_capas, d_mascaras)
+    return d_capas, d_mascaras
+
+
 def _salidas(n_fechas: int, alto: int, ancho: int):
     capas = np.empty((n_fechas, len(CAPAS_FLOAT), alto, ancho), dtype=np.float32)
     mascaras = np.empty((n_fechas, len(CAPAS_MASCARA), alto, ancho), dtype=np.uint8)
