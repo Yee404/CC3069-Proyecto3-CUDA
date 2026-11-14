@@ -110,3 +110,32 @@ def orden_en_cpu(
     medianas = np.array([m for m, _ in pares], dtype=np.float64)
     p90 = np.array([q for _, q in pares], dtype=np.float64)
     return medianas, p90
+
+
+# --------------------------------------------------------------------------
+# K3: histogramas de clorofila-a por fecha (notebook 02, celda 48)
+# --------------------------------------------------------------------------
+# El notebook dibuja, por fecha, la clorofila-a usable recortada a la escala del lago
+# (np.clip(v, 0, limite)) con 60 bins. Aquí el rango se fija en [0, limite] para que los
+# bins sean los mismos en todas las fechas y se puedan comparar y sumar.
+N_BINS = 60
+LIMITE_HISTOGRAMA = {"Atitlan": 5.0, "Amatitlan": 25.0}   # ESCALA del notebook 02
+
+
+def bordes_histograma(lago: str) -> np.ndarray:
+    """Bordes exactos que usa np.histogram para datos float32 en [0, limite] (61 valores)."""
+    limite = LIMITE_HISTOGRAMA[lago]
+    return np.histogram(np.zeros(1, np.float32), bins=N_BINS, range=(0, limite))[1]
+
+
+def histogramas_lab(lago: str, capas_lab: list[dict], mascara: np.ndarray) -> np.ndarray:
+    """Versión secuencial, como el notebook 02: (fechas, N_BINS) conteos."""
+    limite = LIMITE_HISTOGRAMA[lago]
+    salida = np.empty((len(capas_lab), N_BINS), dtype=np.int64)
+    for f, capa in enumerate(capas_lab):
+        usable = mascara & capa["validos"]
+        v = capa["chla"][usable]
+        v = v[np.isfinite(v)]
+        salida[f] = np.histogram(np.clip(v, 0, limite), bins=N_BINS, range=(0, limite))[0]
+    return salida
+

@@ -38,7 +38,7 @@ import numpy as np
 from numba import cuda, float32, float64, int32
 
 from src.calculo_gpu.kernels_indices import BLOQUE, configuracion
-from src.estadisticas import FRACCION_AGUA_LAGO, Q, UMBRAL_CHLA_ALTO, UMBRAL_FAI
+from src.estadisticas import FRACCION_AGUA_LAGO, N_BINS, Q, UMBRAL_CHLA_ALTO, UMBRAL_FAI
 
 HILOS = BLOQUE[0] * BLOQUE[1]   # 256 hilos por bloque
 MENOS_INF = np.float32(-np.inf)
@@ -131,6 +131,15 @@ def k2_reducciones(capas, mascaras, lago, acum, maximo, valores, contador):
         cuda.atomic.max(maximo, f, sh_max[0])
 
 
+def mascara_lago_gpu(d_mascaras):
+    """Máscara fija del lago (uint8, en la GPU) a partir de la capa `agua` de K1."""
+    _, _, alto, ancho = d_mascaras.shape
+    d_lago = cuda.device_array((alto, ancho), dtype=np.uint8)
+    grid, bloque = configuracion(1, alto, ancho)
+    k_mascara_lago[grid[:2], bloque](d_mascaras, d_lago)
+    return d_lago
+
+
 def estadisticas_gpu(d_capas, d_mascaras) -> dict:
     """Máscara del lago y K2 sobre las salidas de K1 que están en la GPU.
 
@@ -143,9 +152,7 @@ def estadisticas_gpu(d_capas, d_mascaras) -> dict:
     ev = [cuda.event() for _ in range(4)]
 
     ev[0].record()
-    d_lago = cuda.device_array((alto, ancho), dtype=np.uint8)
-    grid, bloque = configuracion(1, alto, ancho)
-    k_mascara_lago[grid[:2], bloque](d_mascaras, d_lago)
+    d_lago = mascara_lago_gpu(d_mascaras)
     ev[1].record()
 
     d_acum = cuda.to_device(np.zeros((n_fechas, Q), dtype=np.float64))
@@ -168,10 +175,76 @@ def estadisticas_gpu(d_capas, d_mascaras) -> dict:
     ev[3].synchronize()
 
     return {
-        "lago": lago, "acum": acum, "maximo": maximo, "valores": valores,
+        "lago": lago, "d_lago": d_lago, "acum": acum, "maximo": maximo, "valores": valores,
         "tiempos": {
             "mascara_s": ev[0].elapsed_time(ev[1]) / 1000,
             "k2_s": ev[1].elapsed_time(ev[2]) / 1000,
             "copia_gpu_cpu_s": ev[2].elapsed_time(ev[3]) / 1000,
         },
     }
+
+
+# --------------------------------------------------------------------------
+# K3: histogramas de clorofila-a por fecha
+# --------------------------------------------------------------------------
+@cuda.jit
+def k3_histograma(capas, mascaras, lago, bordes, hist):
+    """Histograma privado por bloque en memoria compartida, luego combinado.
+
+    Cada hilo suma su píxel al histograma de su bloque (atómico en memoria compartida,
+    rápido); al final cada bloque suma sus bins no vacíos a `hist[fecha]` con un atómico
+    global por bin. El bin se elige como np.histogram: estimación por división y
+    corrección contra los mismos bordes float32, así el resultado es idéntico.
+    """
+    col, fila = cuda.grid(2)
+    f = cuda.blockIdx.z
+    tid = cuda.threadIdx.y * cuda.blockDim.x + cuda.threadIdx.x
+    sh = cuda.shared.array(shape=N_BINS, dtype=int32)
+    if tid < N_BINS:
+        sh[tid] = 0
+    cuda.syncthreads()
+
+    if fila < lago.shape[0] and col < lago.shape[1]:
+        if (lago[fila, col] != 0) and (mascaras[f, VALIDOS, fila, col] != 0):
+            x = capas[f, CHLA, fila, col]
+            if not math.isnan(x):
+                inicio = bordes[0]
+                fin = bordes[N_BINS]
+                if x < inicio:
+                    x = inicio
+                if x > fin:
+                    x = fin
+                b = int((x - inicio) / (fin - inicio) * N_BINS)
+                if b > N_BINS - 1:
+                    b = N_BINS - 1
+                while b > 0 and x < bordes[b]:
+                    b -= 1
+                while b < N_BINS - 1 and x >= bordes[b + 1]:
+                    b += 1
+                cuda.atomic.add(sh, b, 1)
+    cuda.syncthreads()
+
+    if tid < N_BINS and sh[tid] > 0:
+        cuda.atomic.add(hist, (f, tid), sh[tid])
+
+
+def histogramas_gpu(d_capas, d_mascaras, d_lago, bordes: np.ndarray) -> tuple[np.ndarray, dict]:
+    """K3 sobre las capas de K1 y la máscara del lago que ya están en la GPU.
+
+    Returns:
+        (hist int64 (fechas, N_BINS) en el host, tiempos con eventos de CUDA).
+    """
+    n_fechas, _, alto, ancho = d_capas.shape
+    ev = [cuda.event() for _ in range(3)]
+    ev[0].record()
+    d_bordes = cuda.to_device(bordes.astype(np.float32))
+    d_hist = cuda.to_device(np.zeros((n_fechas, N_BINS), dtype=np.int32))
+    grid, bloque = configuracion(n_fechas, alto, ancho)
+    k3_histograma[grid, bloque](d_capas, d_mascaras, d_lago, d_bordes, d_hist)
+    ev[1].record()
+    hist = d_hist.copy_to_host().astype(np.int64)
+    ev[2].record()
+    ev[2].synchronize()
+    return hist, {"k3_s": ev[0].elapsed_time(ev[1]) / 1000,
+                  "copia_gpu_cpu_s": ev[1].elapsed_time(ev[2]) / 1000}
+

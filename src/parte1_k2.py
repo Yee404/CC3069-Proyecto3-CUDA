@@ -54,6 +54,11 @@ from src.referencia_cpu.reducciones_multinucleo import estadisticas_cpu
 
 NUMERICAS = [c for c in COLUMNAS if c not in ("lago", "fecha")]
 
+# Corridas de calentamiento de las fases GPU. Con 1 sola, en Amatitlán las primeras corridas
+# medidas salían ~2.6x más lentas (0.08 vs 0.03 s): la GPU de la laptop baja su frecuencia
+# durante las fases de CPU y tarda en volver a subirla. Con 3 ya está estable.
+CALENTAMIENTO_GPU = 3
+
 
 # --------------------------------------------------------------------------
 # Versiones
@@ -164,7 +169,8 @@ def medir_lago(lago, fechas, cubo, scl, repeticiones, usar_gpu) -> list[Medicion
         from numba import cuda
 
         d_capas, d_mascaras = cuda.to_device(capas), cuda.to_device(mascaras)
-        k2_gpu(lago, fechas, d_capas, d_mascaras)  # calentamiento
+        for _ in range(CALENTAMIENTO_GPU):
+            k2_gpu(lago, fechas, d_capas, d_mascaras)
         por_fase = {"mascara_s": [], "k2_s": [], "copia_gpu_cpu_s": [], "orden_cpu_s": []}
         totales = []
         for _ in range(repeticiones):
@@ -194,10 +200,12 @@ def medir_lago(lago, fechas, cubo, scl, repeticiones, usar_gpu) -> list[Medicion
     if usar_gpu:
         fase("Parte I (K1+K2) datos en GPU", "GPU",
              lambda: parte1_gpu(lago, fechas, cubo, scl, False),
-             "copia el cubo, K1, mascara, K2; devuelve solo estadisticas", sincronizar_gpu=True)
+             "copia el cubo, K1, mascara, K2; devuelve solo estadisticas", sincronizar_gpu=True,
+             calentamiento=CALENTAMIENTO_GPU)
         fase("Parte I (K1+K2) devolviendo capas", "GPU",
              lambda: parte1_gpu(lago, fechas, cubo, scl, True),
-             "igual + copia de capas y mascaras al CPU", sincronizar_gpu=True)
+             "igual + copia de capas y mascaras al CPU", sincronizar_gpu=True,
+             calentamiento=CALENTAMIENTO_GPU)
     return mediciones
 
 

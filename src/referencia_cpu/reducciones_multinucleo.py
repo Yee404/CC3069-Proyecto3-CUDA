@@ -20,7 +20,7 @@ import math
 import numpy as np
 from numba import njit, prange
 
-from src.estadisticas import FRACCION_AGUA_LAGO, Q, UMBRAL_CHLA_ALTO, UMBRAL_FAI
+from src.estadisticas import FRACCION_AGUA_LAGO, N_BINS, Q, UMBRAL_CHLA_ALTO, UMBRAL_FAI
 
 NDVI, NDWI, NDCI, FAI, CHLA = 0, 1, 2, 3, 4
 AGUA, VALIDOS = 0, 1
@@ -107,3 +107,52 @@ def estadisticas_cpu(capas: np.ndarray, mascaras: np.ndarray, paralelo: bool = T
     (_mascara_n if paralelo else _mascara_1)(mascaras, lago)
     (_estad_n if paralelo else _estad_1)(capas, mascaras, lago, acum, maximo, medianas, p90)
     return {"lago": lago, "acum": acum, "maximo": maximo, "medianas": medianas, "p90": p90}
+
+
+def mascara_lago_cpu(mascaras: np.ndarray, paralelo: bool = True) -> np.ndarray:
+    """Máscara fija del lago (uint8) a partir de la capa `agua` de K1."""
+    _, _, alto, ancho = mascaras.shape
+    lago = np.empty((alto, ancho), dtype=np.uint8)
+    (_mascara_n if paralelo else _mascara_1)(mascaras, lago)
+    return lago
+
+
+# --------------------------------------------------------------------------
+# K3: histogramas de clorofila-a por fecha (misma elección de bin que la GPU)
+# --------------------------------------------------------------------------
+def _histogramas(capas, mascaras, lago, bordes, hist):
+    n_fechas, _, alto, ancho = capas.shape
+    inicio = bordes[0]
+    fin = bordes[N_BINS]
+    for f in prange(n_fechas):
+        for fila in range(alto):
+            for col in range(ancho):
+                if lago[fila, col] == 0 or mascaras[f, VALIDOS, fila, col] == 0:
+                    continue
+                x = capas[f, CHLA, fila, col]
+                if math.isnan(x):
+                    continue
+                if x < inicio:
+                    x = inicio
+                if x > fin:
+                    x = fin
+                b = int((x - inicio) / (fin - inicio) * N_BINS)
+                if b > N_BINS - 1:
+                    b = N_BINS - 1
+                while b > 0 and x < bordes[b]:
+                    b -= 1
+                while b < N_BINS - 1 and x >= bordes[b + 1]:
+                    b += 1
+                hist[f, b] += 1
+
+
+_hist_1 = njit(error_model="numpy")(_histogramas)
+_hist_n = njit(parallel=True, error_model="numpy")(_histogramas)
+
+
+def histogramas_cpu(capas, mascaras, lago, bordes: np.ndarray, paralelo: bool = True) -> np.ndarray:
+    """K3 en CPU: (fechas, N_BINS) conteos. En paralelo, una fecha por núcleo."""
+    hist = np.zeros((capas.shape[0], N_BINS), dtype=np.int64)
+    (_hist_n if paralelo else _hist_1)(capas, mascaras, lago, bordes.astype(np.float32), hist)
+    return hist
+
