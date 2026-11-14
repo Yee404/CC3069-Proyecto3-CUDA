@@ -1,0 +1,7 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+Construccion del dataset (22 escenas),CPU secuencial,13.043705866652695,0.27844473106591483,12.916855;12.851274;13.362989,lab4 dataset_ml.muestrear_escena en bucle; sin escribir CSV; 3 corridas
+Construccion del dataset (22 escenas),CPU multinucleo,5.880860433321989,0.09283227040133742,5.987487;5.837084;5.818011,"ProcessPoolExecutor, 6 procesos, uno por escena; 3 corridas"
+Lectura de dataset_ml.csv,CPU secuencial,0.6955565600015688,0.016127780045349694,0.710667;0.680398;0.686207;0.715268;0.685243,
+Lectura de matrices_ml.npz,CPU secuencial,0.01602997999289073,0.0014578743343680676,0.018630;0.015556;0.015386;0.015234;0.015345,
+DataFrame -> X/y float32,CPU secuencial,0.013597400003345684,0.00026018953563217677,0.013369;0.013873;0.013451;0.013406;0.013888,
+Particiones (9 experimentos),CPU secuencial,1.7901754399994387,0.009319573915821803,1.782170;1.796693;1.803276;1.785315;1.783424,
