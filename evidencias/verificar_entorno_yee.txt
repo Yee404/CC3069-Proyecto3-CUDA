@@ -1,0 +1,25 @@
+Preparar entorno:
+
+PS C:\Users\mjyee\Downloads\CC3069-Computacion-Paralela\CC3069-Proyecto3-CUDA> .venv\Scripts\python -m src.verificar_entorno
+Python                3.12.9
+Sistema               Windows 11
+nvidia-smi            NVIDIA GeForce RTX 3060 Laptop GPU, 610.62, 6144 MiB
+numba                 0.68.1
+cuda.is_available()   True
+GPU (numba)           NVIDIA GeForce RTX 3060 Laptop GPU
+Compute capability    ComputeCapability(major=8, minor=6)
+Kernel de prueba      OK
+C:\Users\mjyee\Downloads\CC3069-Computacion-Paralela\CC3069-Proyecto3-CUDA\.venv\Lib\site-packages\cupy\_environment.py:286: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+cupy                  14.2.0 (1 GPU)
+xgboost               3.4.1 (device='cuda' OK) )
+
+
+
+________
+
+
+Verificar_entorno:
+
+PS C:\Users\mjyee\Downloads\CC3069-Computacion-Paralela\CC3069-Proyecto3-CUDA> .venv\Scripts\python -c "from src.preparacion_cpu.dataset import cargar_matrices, cargar_particiones as p; X,y=cargar_matrices(); print(X.shape, y.sum(), list(p()))"
+(401793, 13) 4866 [np.str_('ej4_busqueda'), np.str_('ej6_aleatoria'), np.str_('ej6_espacial'), np.str_('ej6_temporal'), np.str_('ej6_cronologico'), np.str_('ej7_atitlan_a_amatitlan'), np.str_('ej7_amatitlan_a_atitlan'), np.str_('ej7_intra_atitlan'), np.str_('ej7_intra_amatitlan')]

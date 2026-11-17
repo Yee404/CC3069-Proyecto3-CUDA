@@ -1,0 +1,113 @@
+{
+  "algoritmo": "xgboost",
+  "variante": "cpu_multinucleo",
+  "version": "CPU multinucleo",
+  "parcial": false,
+  "n_ajustes": 93,
+  "n_ajustes_esperados": 93,
+  "experimentos": [
+    "ej4_busqueda",
+    "ej6_aleatoria",
+    "ej6_espacial",
+    "ej6_temporal",
+    "ej6_cronologico",
+    "ej7_atitlan_a_amatitlan",
+    "ej7_amatitlan_a_atitlan",
+    "ej7_intra_atitlan",
+    "ej7_intra_amatitlan"
+  ],
+  "mejores_hiperparametros": {
+    "ej4_busqueda": {
+      "learning_rate": 0.1,
+      "max_leaves": 31
+    },
+    "ej6_cronologico": {
+      "learning_rate": 0.1,
+      "max_leaves": 63
+    },
+    "ej7_atitlan_a_amatitlan": {
+      "learning_rate": 0.1,
+      "max_leaves": 63
+    },
+    "ej7_amatitlan_a_atitlan": {
+      "learning_rate": 0.1,
+      "max_leaves": 31
+    },
+    "ej7_intra_atitlan": {
+      "learning_rate": 0.1,
+      "max_leaves": 63
+    },
+    "ej7_intra_amatitlan": {
+      "learning_rate": 0.1,
+      "max_leaves": 31
+    }
+  },
+  "tiempos_por_experimento": {
+    "ej4_busqueda": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 11.963074400000096,
+      "suma_ajustes_s": 10.946083300000282,
+      "suma_predicciones_s": 0.4325291999998626
+    },
+    "ej6_aleatoria": {
+      "n_ajustes": 5,
+      "tiempo_pared_s": 4.711236699999972,
+      "suma_ajustes_s": 4.477419300000065,
+      "suma_predicciones_s": 0.12827790000005734
+    },
+    "ej6_espacial": {
+      "n_ajustes": 5,
+      "tiempo_pared_s": 4.62187449999999,
+      "suma_ajustes_s": 4.393025400000056,
+      "suma_predicciones_s": 0.1221176999998761
+    },
+    "ej6_temporal": {
+      "n_ajustes": 5,
+      "tiempo_pared_s": 4.722281800000019,
+      "suma_ajustes_s": 4.475202599999875,
+      "suma_predicciones_s": 0.14482660000010128
+    },
+    "ej6_cronologico": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 10.015884700000015,
+      "suma_ajustes_s": 9.420831999999905,
+      "suma_predicciones_s": 0.39719320000017433
+    },
+    "ej7_atitlan_a_amatitlan": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 10.757056899999952,
+      "suma_ajustes_s": 10.143484599999965,
+      "suma_predicciones_s": 0.37323019999985263
+    },
+    "ej7_amatitlan_a_atitlan": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 5.280754600000137,
+      "suma_ajustes_s": 5.047539500000198,
+      "suma_predicciones_s": 0.18756409999980406
+    },
+    "ej7_intra_atitlan": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 9.123002100000122,
+      "suma_ajustes_s": 8.350583899999606,
+      "suma_predicciones_s": 0.29750150000040776
+    },
+    "ej7_intra_amatitlan": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 4.816879599999993,
+      "suma_ajustes_s": 4.700275899999951,
+      "suma_predicciones_s": 0.07065509999995356
+    }
+  },
+  "tiempo_pared_total_s": 66.0120453000003,
+  "n_procesos": 8,
+  "fecha": "2026-11-16T18:54:27",
+  "paquetes": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.6"
+  },
+  "repeticiones": 5,
+  "calentamiento": 1,
+  "maquina": "rtx3060",
+  "representativos": true
+}

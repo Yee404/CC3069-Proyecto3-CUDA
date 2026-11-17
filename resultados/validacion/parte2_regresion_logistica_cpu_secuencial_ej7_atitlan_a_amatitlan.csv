@@ -1,0 +1,3 @@
+modelo,umbral,accuracy,precision,recall,f1,f2,roc_auc,pr_auc,VN,FP,FN,VP,algoritmo,variante,experimento,etapa,criterio_umbral,hiperparametros,n_entrenamiento,n_evaluacion,positivos_evaluacion
+regresion_logistica,0.5,0.7499122293739029,0.3053152039555006,0.9985106382978723,0.46763987843156796,0.6866933949840508,0.9754600332927665,0.8323280506287776,27347,10678,7,4693,regresion_logistica,cpu_secuencial,ej7_atitlan_a_amatitlan,prueba,0.5,"{""C"": 0.1}",359068,42725,4700
+regresion_logistica,0.9996,0.940947922761849,0.6820538551597257,0.8676595744680851,0.7637419234010675,0.8228742079987086,0.9754600332927665,0.8323280506287776,36124,1901,622,4078,regresion_logistica,cpu_secuencial,ej7_atitlan_a_amatitlan,prueba,optimo F2,"{""C"": 0.1}",359068,42725,4700

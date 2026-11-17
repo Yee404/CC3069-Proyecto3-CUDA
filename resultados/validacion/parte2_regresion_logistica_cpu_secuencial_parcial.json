@@ -1,0 +1,36 @@
+{
+  "algoritmo": "regresion_logistica",
+  "variante": "cpu_secuencial",
+  "version": "CPU secuencial",
+  "parcial": true,
+  "n_ajustes": 10,
+  "n_ajustes_esperados": 75,
+  "experimentos": [
+    "ej7_intra_amatitlan"
+  ],
+  "mejores_hiperparametros": {
+    "ej7_intra_amatitlan": {
+      "C": 1.0
+    }
+  },
+  "tiempos_por_experimento": {
+    "ej7_intra_amatitlan": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 0.8063017999957083,
+      "suma_ajustes_s": 0.7137791999921319,
+      "suma_predicciones_s": 0.07131150001077913
+    }
+  },
+  "tiempo_pared_total_s": 0.8063017999957083,
+  "n_procesos": 8,
+  "fecha": "2026-11-16T15:46:37",
+  "paquetes": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.6"
+  },
+  "repeticiones": 5,
+  "calentamiento": 1,
+  "maquina": "",
+  "representativos": false
+}

@@ -1,0 +1,14 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+protocolo ej4_busqueda,CPU secuencial,8.595589300000029,0.0,8.595589,1 pasada; 10 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_aleatoria,CPU secuencial,7.123744699999861,0.0,7.123745,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_espacial,CPU secuencial,7.690177400000266,0.0,7.690177,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_temporal,CPU secuencial,6.712014499999896,0.0,6.712014,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_cronologico,CPU secuencial,8.991212400000222,0.0,8.991212,1 pasada; 10 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_atitlan_a_amatitlan,CPU secuencial,10.207676099999844,0.0,10.207676,1 pasada; 10 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_amatitlan_a_atitlan,CPU secuencial,1.3924928999995245,0.0,1.392493,1 pasada; 10 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_intra_atitlan,CPU secuencial,7.334417999999914,0.0,7.334418,1 pasada; 10 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_intra_amatitlan,CPU secuencial,1.1655002000002241,0.0,1.165500,1 pasada; 10 ajustes; sin metricas; maquina=rtx3060
+protocolo completo,CPU secuencial,59.21282549999978,0.0,59.212825,1 pasada; 75 ajustes; maquina=rtx3060
+representativo: busqueda ej4 (9 ajustes + prediccion de validacion),CPU secuencial,6.953505100000075,0.04287883462711826,6.971460;6.890400;6.933116;6.970683;7.001868,cpu_secuencial; 8 procesos; maquina=rtx3060
+representativo: entrenamiento ej4 final (281255 filas),CPU secuencial,1.0096423400001187,0.06327601204094904,1.048186;1.067664;0.927449;1.048848;0.956065,cpu_secuencial; maquina=rtx3060
+representativo: prediccion ej4 prueba (120538 filas),CPU secuencial,0.026867339999989782,0.002310853275911244,0.025238;0.024279;0.028441;0.026453;0.029926,cpu_secuencial; maquina=rtx3060

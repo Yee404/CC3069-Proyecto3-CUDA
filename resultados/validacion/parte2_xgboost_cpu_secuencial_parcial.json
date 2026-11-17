@@ -1,0 +1,37 @@
+{
+  "algoritmo": "xgboost",
+  "variante": "cpu_secuencial",
+  "version": "CPU secuencial",
+  "parcial": true,
+  "n_ajustes": 13,
+  "n_ajustes_esperados": 93,
+  "experimentos": [
+    "ej4_busqueda"
+  ],
+  "mejores_hiperparametros": {
+    "ej4_busqueda": {
+      "learning_rate": 0.1,
+      "max_leaves": 31
+    }
+  },
+  "tiempos_por_experimento": {
+    "ej4_busqueda": {
+      "n_ajustes": 13,
+      "tiempo_pared_s": 39.567673799996555,
+      "suma_ajustes_s": 35.56804769998416,
+      "suma_predicciones_s": 3.542795900015335
+    }
+  },
+  "tiempo_pared_total_s": 39.567673799996555,
+  "n_procesos": 8,
+  "fecha": "2026-11-16T18:30:35",
+  "paquetes": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.6"
+  },
+  "repeticiones": 3,
+  "calentamiento": 1,
+  "maquina": "rtx3060",
+  "representativos": true
+}

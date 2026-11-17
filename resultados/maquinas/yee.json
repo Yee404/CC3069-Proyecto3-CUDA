@@ -1,0 +1,21 @@
+{
+  "cpu": "11th Gen Intel(R) Core(TM) i9-11900H @ 2.50GHz",
+  "nucleos_fisicos": 8,
+  "nucleos_logicos": 16,
+  "ram_gb": 15.8,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU, 610.62, 6144 MiB",
+  "sistema": "Windows 11 (10.0.26200)",
+  "python": "3.12.9",
+  "bibliotecas": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "rasterio": "1.5.2",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "numba": "0.68.1",
+    "numba-cuda": "0.30.4",
+    "cupy-cuda12x": "14.2.0"
+  }
+}

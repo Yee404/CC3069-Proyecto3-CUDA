@@ -1,0 +1,107 @@
+{
+  "algoritmo": "regresion_logistica",
+  "variante": "cpu_multinucleo",
+  "version": "CPU multinucleo",
+  "parcial": false,
+  "n_ajustes": 75,
+  "n_ajustes_esperados": 75,
+  "experimentos": [
+    "ej4_busqueda",
+    "ej6_aleatoria",
+    "ej6_espacial",
+    "ej6_temporal",
+    "ej6_cronologico",
+    "ej7_atitlan_a_amatitlan",
+    "ej7_amatitlan_a_atitlan",
+    "ej7_intra_atitlan",
+    "ej7_intra_amatitlan"
+  ],
+  "mejores_hiperparametros": {
+    "ej4_busqueda": {
+      "C": 1.0
+    },
+    "ej6_cronologico": {
+      "C": 0.1
+    },
+    "ej7_atitlan_a_amatitlan": {
+      "C": 0.1
+    },
+    "ej7_amatitlan_a_atitlan": {
+      "C": 1.0
+    },
+    "ej7_intra_atitlan": {
+      "C": 10.0
+    },
+    "ej7_intra_amatitlan": {
+      "C": 1.0
+    }
+  },
+  "tiempos_por_experimento": {
+    "ej4_busqueda": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 4.081710599999951,
+      "suma_ajustes_s": 18.914544400000523,
+      "suma_predicciones_s": 0.39195710000012696
+    },
+    "ej6_aleatoria": {
+      "n_ajustes": 5,
+      "tiempo_pared_s": 2.6785501999997905,
+      "suma_ajustes_s": 11.736373699999604,
+      "suma_predicciones_s": 0.13427620000038587
+    },
+    "ej6_espacial": {
+      "n_ajustes": 5,
+      "tiempo_pared_s": 2.8241738000001533,
+      "suma_ajustes_s": 12.119176600000173,
+      "suma_predicciones_s": 0.14259399999946254
+    },
+    "ej6_temporal": {
+      "n_ajustes": 5,
+      "tiempo_pared_s": 2.9718784000001506,
+      "suma_ajustes_s": 12.12259479999966,
+      "suma_predicciones_s": 0.13229830000045695
+    },
+    "ej6_cronologico": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 4.396257400000195,
+      "suma_ajustes_s": 20.823625399999855,
+      "suma_predicciones_s": 0.38519499999983964
+    },
+    "ej7_atitlan_a_amatitlan": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 4.72956639999984,
+      "suma_ajustes_s": 24.732874400000583,
+      "suma_predicciones_s": 0.5109778000000915
+    },
+    "ej7_amatitlan_a_atitlan": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 0.5820269999994707,
+      "suma_ajustes_s": 1.2957727999996678,
+      "suma_predicciones_s": 0.09339490000002115
+    },
+    "ej7_intra_atitlan": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 3.523613700000169,
+      "suma_ajustes_s": 16.377236900000298,
+      "suma_predicciones_s": 0.3477173000005678
+    },
+    "ej7_intra_amatitlan": {
+      "n_ajustes": 10,
+      "tiempo_pared_s": 0.4305618999997023,
+      "suma_ajustes_s": 0.9457579999998416,
+      "suma_predicciones_s": 0.02543450000030134
+    }
+  },
+  "tiempo_pared_total_s": 26.218339399999422,
+  "n_procesos": 8,
+  "fecha": "2026-11-16T19:41:20",
+  "paquetes": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.6"
+  },
+  "repeticiones": 5,
+  "calentamiento": 1,
+  "maquina": "rtx3060",
+  "representativos": true
+}
