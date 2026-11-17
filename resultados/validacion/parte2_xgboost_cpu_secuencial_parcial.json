@@ -17,21 +17,21 @@
   "tiempos_por_experimento": {
     "ej4_busqueda": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 39.567673799996555,
-      "suma_ajustes_s": 35.56804769998416,
-      "suma_predicciones_s": 3.542795900015335
+      "tiempo_pared_s": 27.061359000000152,
+      "suma_ajustes_s": 24.632655799999498,
+      "suma_predicciones_s": 2.0970321000003196
     }
   },
-  "tiempo_pared_total_s": 39.567673799996555,
+  "tiempo_pared_total_s": 27.061359000000152,
   "n_procesos": 8,
-  "fecha": "2026-11-16T18:30:35",
+  "fecha": "2026-11-17T00:57:31",
   "paquetes": {
     "scikit-learn": "1.9.1",
     "xgboost": "3.4.1",
     "numpy": "2.4.6"
   },
-  "repeticiones": 3,
+  "repeticiones": 5,
   "calentamiento": 1,
-  "maquina": "rtx3060",
-  "representativos": true
+  "maquina": "",
+  "representativos": false
 }

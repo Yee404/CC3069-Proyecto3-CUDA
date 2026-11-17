@@ -1,6 +1,3 @@
 fase,version,promedio_s,desviacion_s,corridas_s,notas
-protocolo ej4_busqueda,CPU secuencial,39.567673799996555,0.0,39.567674,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo (subconjunto),CPU secuencial,39.567673799996555,0.0,39.567674,1 pasada; 13 ajustes; maquina=rtx3060
-representativo: busqueda ej4 (12 ajustes + prediccion de validacion),CPU secuencial,35.749408300000745,0.28888873716518576,36.082460;35.599136;35.566629,cpu_secuencial; 8 procesos; maquina=rtx3060
-representativo: entrenamiento ej4 final (281255 filas),CPU secuencial,3.708268533332254,0.06604801598649578,3.705658;3.643565;3.775583,cpu_secuencial; maquina=rtx3060
-representativo: prediccion ej4 prueba (120538 filas),CPU secuencial,0.34020903333536506,0.01832520780394342,0.321769;0.340442;0.358417,cpu_secuencial; maquina=rtx3060
+protocolo ej4_busqueda,CPU secuencial,27.061359000000152,0.0,27.061359,1 pasada; 13 ajustes; sin metricas; 
+protocolo (subconjunto),CPU secuencial,27.061359000000152,0.0,27.061359,1 pasada; 13 ajustes; 
