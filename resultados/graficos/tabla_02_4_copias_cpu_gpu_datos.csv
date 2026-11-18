@@ -1,0 +1,5 @@
+﻿copia,promedio_s,desviacion_s,corridas_s,maquina
+"X,y de entrenamiento CPU->GPU (281255 filas, 14.9 MB)",0.0020143400000051,9.062057161885455e-05,0.002169;0.002017;0.001945;0.001977;0.001963,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+"X de prueba CPU->GPU (120538 filas, 6.3 MB)",0.0008310199999868,5.592584384184448e-06,0.000831;0.000823;0.000831;0.000831;0.000839,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+"probabilidades GPU->CPU float64, Regresion Logistica (120538 valores)",0.0002146000000266,4.633033602173106e-06,0.000216;0.000222;0.000213;0.000211;0.000211,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+"probabilidades GPU->CPU float32, XGBoost (120538 valores)",0.0001128599999901,1.2953763430406571e-06,0.000115;0.000112;0.000113;0.000111;0.000112,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"

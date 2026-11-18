@@ -1,0 +1,7 @@
+﻿Fase,Atitlán (s),Speedup Atitlán,Amatitlán (s),Speedup Amatitlán
+"CPU secuencial (NumPy, como el notebook 02)",0.04727 ± 0.00942,1.0×,0.007044 ± 0.000378,1.0×
+CPU 1 núcleo (Numba),0.02292 ± 0.00028,2.1×,0.003208 ± 0.000605,2.2×
+CPU multinúcleo (Numba),0.004440 ± 0.000353,10.6×,0.0004604 ± 0.0000255,15.3×
+GPU: kernel (sin copia),0.001185 ± 0.000025,40×,0.0005591 ± 0.0000031,12.6×
+GPU: copia de histogramas GPU→CPU,0.00005853 ± 0.00000324,,0.0001029 ± 0.0000901,
+GPU total (con la copia),0.001344 ± 0.000030,35×,0.0007588 ± 0.0000885,9.3×

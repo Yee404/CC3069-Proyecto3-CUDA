@@ -1,0 +1,9 @@
+﻿fase,GPU_s,GPU_desv,CPU secuencial_s,CPU secuencial_desv,CPU multinúcleo_s,CPU multinúcleo_desv,maquina
+"Copia X,y CPU→GPU",0.0040000999999989,0.0019218209711121,,,,,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Construir QuantileDMatrix,0.0096816800000027,0.000493697586585,0.4924073400000026,0.0077609400640592,0.0937775199999975,0.0024372660291725,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Entrenamiento (100 árboles),0.6521405000000016,0.022742349584861,1.4034293200000008,0.090753069700793,0.5555750999999987,0.0456380729990284,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Copia X de prueba CPU→GPU,0.0014213599999976,8.440001777362509e-05,,,,,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Predicción,0.0063974600000022,0.0040090665513267,0.1661933400000009,0.0016807008859406,0.0252448000000072,0.0001398628435258,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Copia del resultado GPU→CPU,0.0002579199999985,0.0002155563313851,,,,,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Ruta real ajustar() (la del protocolo),0.6319284600000004,0.0031528528443288,1.8009132400000027,0.1393611850278003,0.7542468199999973,0.0681667413707563,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+Ruta real probabilidad(),0.002129339999999,2.1774136041166327e-05,0.1413157800000078,0.0005321478149983,0.0319693999999913,0.007534615628889,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"

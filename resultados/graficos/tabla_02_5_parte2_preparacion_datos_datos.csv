@@ -1,0 +1,6 @@
+﻿fase,cpu_secuencial_s,cpu_secuencial_desv,cpu_multinucleo_s,cpu_multinucleo_desv,speedup,speedup_desv,maquina
+Construccion del dataset (22 escenas),13.043705866652695,0.2784447310659148,5.880860433321989,0.0928322704013374,2.2179927605057186,0.05888670817042138,Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · preparación de datos de la Parte II (2026-11-15)
+Lectura de dataset_ml.csv,0.6955565600015688,0.0161277800453496,,,,,Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · preparación de datos de la Parte II (2026-11-15)
+Lectura de matrices_ml.npz,0.0160299799928907,0.001457874334368,,,,,Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · preparación de datos de la Parte II (2026-11-15)
+DataFrame -> X/y float32,0.0135974000033456,0.0002601895356321,,,,,Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · preparación de datos de la Parte II (2026-11-15)
+Particiones (9 experimentos),1.7901754399994387,0.0093195739158218,,,,,Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · preparación de datos de la Parte II (2026-11-15)

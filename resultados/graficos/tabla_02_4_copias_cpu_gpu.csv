@@ -1,0 +1,5 @@
+﻿Copia,Tiempo (ms)
+"X,y de entrenamiento CPU->GPU (281255 filas, 14.9 MB)",2.01 ± 0.09
+"X de prueba CPU->GPU (120538 filas, 6.3 MB)",0.831 ± 0.006
+"probabilidades GPU->CPU float64, Regresion Logistica (120538 valores)",0.215 ± 0.005
+"probabilidades GPU->CPU float32, XGBoost (120538 valores)",0.113 ± 0.001

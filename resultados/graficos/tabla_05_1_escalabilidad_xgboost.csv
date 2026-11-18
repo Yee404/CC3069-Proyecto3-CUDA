@@ -1,0 +1,19 @@
+﻿Fase,Versión,281 255 filas (s),3 750 000 filas (s),Crecimiento (13.3× más filas)
+"Copia X,y CPU→GPU",GPU,0.00400 ± 0.00192,0.0369 ± 0.0005,9.2×
+Construir QuantileDMatrix,GPU,0.00968 ± 0.00049,0.0919 ± 0.0005,9.5×
+Construir QuantileDMatrix,CPU secuencial,0.492 ± 0.008,5.22 ± 0.15,10.6×
+Construir QuantileDMatrix,CPU multinúcleo,0.0938 ± 0.0024,1.21 ± 0.05,12.9×
+Entrenamiento (100 árboles),GPU,0.652 ± 0.023,1.26 ± 0.01,1.9×
+Entrenamiento (100 árboles),CPU secuencial,1.40 ± 0.09,16.9 ± 0.7,12.1×
+Entrenamiento (100 árboles),CPU multinúcleo,0.556 ± 0.046,8.80 ± 0.38,15.8×
+Copia X de prueba CPU→GPU,GPU,0.00142 ± 0.00008,0.0160 ± 0.0005,11.2×
+Predicción,GPU,0.00640 ± 0.00401,0.0151 ± 0.0020,2.4×
+Predicción,CPU secuencial,0.166 ± 0.002,1.98 ± 0.17,11.9×
+Predicción,CPU multinúcleo,0.0252 ± 0.0001,0.400 ± 0.036,15.8×
+Copia del resultado GPU→CPU,GPU,0.000258 ± 0.000216,0.00213 ± 0.00083,8.3×
+Ruta real ajustar() (la del protocolo),GPU,0.632 ± 0.003,1.40 ± 0.00,2.2×
+Ruta real ajustar() (la del protocolo),CPU secuencial,1.80 ± 0.14,23.3 ± 2.3,12.9×
+Ruta real ajustar() (la del protocolo),CPU multinúcleo,0.754 ± 0.068,9.80 ± 0.18,13.0×
+Ruta real probabilidad(),GPU,0.00213 ± 0.00002,0.0321 ± 0.0002,15.1×
+Ruta real probabilidad(),CPU secuencial,0.141 ± 0.001,1.78 ± 0.01,12.6×
+Ruta real probabilidad(),CPU multinúcleo,0.0320 ± 0.0075,0.377 ± 0.012,11.8×

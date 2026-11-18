@@ -1,0 +1,8 @@
+﻿Medida,Regresión Logística,XGBoost
+Filas del CSV / muestras con hora válida,597 / 596,476 / 476
+Vueltas del protocolo (duración),15 (8.0–8.7 s); calentamiento 2.5 s,1 (96.3–96.3 s); calentamiento 3.4 s
+Utilización de GPU (máx. / prom.),65 % / 18.7 %,48 % / 38.2 %
+Utilización de memoria (máx. / prom.),21 % / 5.6 %,8 % / 2.4 %
+Memoria usada (máx. / prom.),243 MiB / 236.7 MiB,337 MiB / 280.5 MiB
+Potencia (máx. / prom.),60.0 W / 43.9 W,53.2 W / 45.7 W
+Temperatura (máx. / prom.),67 °C / 60.2 °C,65 °C / 60.2 °C

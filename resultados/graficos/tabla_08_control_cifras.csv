@@ -1,0 +1,176 @@
+﻿Tema,Cifra,Calculado,Referencia,Coincide
+Parte I · K1,K1 Atitlán: speedup de CPU 1 núcleo (Numba),3.9×,3.9×,✓
+Parte I · K1,K1 Atitlán: speedup de CPU multinúcleo (Numba prange),11.9×,11.9×,✓
+Parte I · K1,K1 Atitlán: speedup de GPU: kernel (sin copias),289×,288×,✗
+Parte I · K1,K1 Atitlán: speedup de GPU total con copias (modo simple),6.7×,6.7×,✓
+Parte I · K1,"K1 Atitlán: speedup de GPU total con copias (streams, 2 fechas por lote)",7.6×,7.6×,✓
+Parte I · K1,K1 Amatitlán: speedup de CPU 1 núcleo (Numba),6.9×,6.9×,✓
+Parte I · K1,K1 Amatitlán: speedup de CPU multinúcleo (Numba prange),16.4×,16.4×,✓
+Parte I · K1,K1 Amatitlán: speedup de GPU: kernel (sin copias),330×,331×,✗
+Parte I · K1,K1 Amatitlán: speedup de GPU total con copias (modo simple),8.9×,8.9×,✓
+Parte I · K1,"K1 Amatitlán: speedup de GPU total con copias (streams, 2 fechas por lote)",9.7×,9.7×,✓
+Parte I · K1,K1 Atitlán: copias como % del tiempo de GPU (simple),89 %,89 %,✓
+Parte I · K2,K2 aislado Atitlán: speedup de CPU 1 núcleo (Numba),2.0×,2.0×,✓
+Parte I · K2,K2 aislado Atitlán: speedup de CPU multinúcleo (Numba),6.1×,6.1×,✓
+Parte I · K2,K2 aislado Atitlán: speedup de GPU total (con la copia de resultados),6.2×,6.2×,✓
+Parte I · K2,K2 aislado Amatitlán: speedup de CPU 1 núcleo (Numba),2.8×,2.8×,✓
+Parte I · K2,K2 aislado Amatitlán: speedup de CPU multinúcleo (Numba),5.6×,5.6×,✓
+Parte I · K2,K2 aislado Amatitlán: speedup de GPU total (con la copia de resultados),3.3×,3.3×,✓
+Parte I · K2,Parte I completa Atitlán: speedup de CPU multinúcleo (Numba),11.6×,11.6×,✓
+Parte I · K2,"Parte I completa Atitlán: speedup de GPU, los datos se quedan en la GPU (copia el cubo, devuelve solo estadísticas)",13.4×,13.4×,✓
+Parte I · K2,"Parte I completa Atitlán: speedup de GPU, devolviendo también las capas (copia de capas y máscaras al CPU)",8.7×,8.7×,✓
+Parte I · K2,Parte I completa Amatitlán: speedup de CPU multinúcleo (Numba),10.3×,10.3×,✓
+Parte I · K2,"Parte I completa Amatitlán: speedup de GPU, los datos se quedan en la GPU (copia el cubo, devuelve solo estadísticas)",9.1×,9.1×,✓
+Parte I · K2,"Parte I completa Amatitlán: speedup de GPU, devolviendo también las capas (copia de capas y máscaras al CPU)",6.5×,6.5×,✓
+Parte I · K3,K3 Atitlán: speedup de CPU 1 núcleo (Numba),2.1×,2.1×,✓
+Parte I · K3,K3 Atitlán: speedup de CPU multinúcleo (Numba),10.6×,10.8×,✗
+Parte I · K3,K3 Atitlán: speedup de GPU: kernel (sin copia),40×,39×,✗
+Parte I · K3,K3 Atitlán: speedup de GPU total (con la copia),35×,36×,✗
+Parte I · K3,K3 Amatitlán: speedup de CPU 1 núcleo (Numba),2.2×,2.2×,✓
+Parte I · K3,K3 Amatitlán: speedup de CPU multinúcleo (Numba),15.3×,14.0×,✗
+Parte I · K3,K3 Amatitlán: speedup de GPU total (con la copia),9.3×,8.8×,✗
+Parte I · K3,K3 Atitlán: GPU total vs CPU multinúcleo,3.3×,3.4×,✗
+Parte I · K1,K1: píxeles distintos en máscaras (todas las versiones),0,0,✓
+Parte I · K2,K2 GPU: dif. relativa máx. (×1e-6),1.03,1.03,✓
+Parte I · K3,K3: bins con conteo distinto (todas las versiones),0,0,✓
+Parte I · lectura,Lectura: bandas distintas contra lab4,0,0,✓
+Parte II · Regresión Logística,RL protocolo: CPU secuencial,29.52 s,29.52 s,✓
+Parte II · Regresión Logística,RL protocolo: CPU multinúcleo,23.06 s,23.06 s,✓
+Parte II · Regresión Logística,RL protocolo: GPU,3.14 s,3.14 s,✓
+Parte II · Regresión Logística,RL protocolo: S vs secuencial,9.4×,9.4×,✓
+Parte II · Regresión Logística,RL protocolo: S vs multinúcleo,7.4×,7.4×,✓
+Parte II · XGBoost,XGBoost protocolo: CPU secuencial,120.90 s,120.90 s,✓
+Parte II · XGBoost,XGBoost protocolo: CPU multinúcleo,49.61 s,49.61 s,✓
+Parte II · XGBoost,XGBoost protocolo: GPU,93.27 s,93.27 s,✓
+Parte II · XGBoost,XGBoost protocolo: S vs secuencial,1.30×,1.30×,✓
+Parte II · XGBoost,XGBoost protocolo: S vs multinúcleo,0.53×,0.53×,✓
+Parte II · Regresión Logística,RL ej4_busqueda: S vs secuencial,8.1×,8.1×,✓
+Parte II · Regresión Logística,RL ej4_busqueda: S vs multinúcleo,6.3×,6.3×,✓
+Parte II · Regresión Logística,RL ej6_aleatoria: S vs secuencial,13.0×,13.0×,✓
+Parte II · Regresión Logística,RL ej6_aleatoria: S vs multinúcleo,9.5×,9.5×,✓
+Parte II · Regresión Logística,RL ej6_espacial: S vs secuencial,13.5×,13.4×,✗
+Parte II · Regresión Logística,RL ej6_espacial: S vs multinúcleo,9.7×,9.6×,✗
+Parte II · Regresión Logística,RL ej6_temporal: S vs secuencial,12.9×,12.9×,✓
+Parte II · Regresión Logística,RL ej6_temporal: S vs multinúcleo,9.6×,9.6×,✓
+Parte II · Regresión Logística,RL ej6_cronologico: S vs secuencial,9.7×,9.7×,✓
+Parte II · Regresión Logística,RL ej6_cronologico: S vs multinúcleo,8.3×,8.3×,✓
+Parte II · Regresión Logística,RL ej7_atitlan_a_amatitlan: S vs secuencial,10.8×,10.8×,✓
+Parte II · Regresión Logística,RL ej7_atitlan_a_amatitlan: S vs multinúcleo,8.6×,8.6×,✓
+Parte II · Regresión Logística,RL ej7_amatitlan_a_atitlan: S vs secuencial,3.3×,3.3×,✓
+Parte II · Regresión Logística,RL ej7_amatitlan_a_atitlan: S vs multinúcleo,2.3×,2.3×,✓
+Parte II · Regresión Logística,RL ej7_intra_atitlan: S vs secuencial,7.6×,7.6×,✓
+Parte II · Regresión Logística,RL ej7_intra_atitlan: S vs multinúcleo,6.3×,6.3×,✓
+Parte II · Regresión Logística,RL ej7_intra_amatitlan: S vs secuencial,2.7×,2.7×,✓
+Parte II · Regresión Logística,RL ej7_intra_amatitlan: S vs multinúcleo,1.9×,1.9×,✓
+Parte II · XGBoost,XGBoost ej4_busqueda: S vs secuencial,1.55×,1.55×,✓
+Parte II · XGBoost,XGBoost ej4_busqueda: S vs multinúcleo,0.63×,0.63×,✓
+Parte II · XGBoost,XGBoost ej6_aleatoria: S vs secuencial,1.65×,1.65×,✓
+Parte II · XGBoost,XGBoost ej6_aleatoria: S vs multinúcleo,0.57×,0.57×,✓
+Parte II · XGBoost,XGBoost ej6_espacial: S vs secuencial,1.56×,1.56×,✓
+Parte II · XGBoost,XGBoost ej6_espacial: S vs multinúcleo,0.55×,0.55×,✓
+Parte II · XGBoost,XGBoost ej6_temporal: S vs secuencial,1.63×,1.63×,✓
+Parte II · XGBoost,XGBoost ej6_temporal: S vs multinúcleo,0.59×,0.59×,✓
+Parte II · XGBoost,XGBoost ej6_cronologico: S vs secuencial,1.57×,1.57×,✓
+Parte II · XGBoost,XGBoost ej6_cronologico: S vs multinúcleo,0.62×,0.62×,✓
+Parte II · XGBoost,XGBoost ej7_atitlan_a_amatitlan: S vs secuencial,1.73×,1.73×,✓
+Parte II · XGBoost,XGBoost ej7_atitlan_a_amatitlan: S vs multinúcleo,0.67×,0.67×,✓
+Parte II · XGBoost,XGBoost ej7_amatitlan_a_atitlan: S vs secuencial,0.52×,0.52×,✓
+Parte II · XGBoost,XGBoost ej7_amatitlan_a_atitlan: S vs multinúcleo,0.32×,0.32×,✓
+Parte II · XGBoost,XGBoost ej7_intra_atitlan: S vs secuencial,1.45×,1.45×,✓
+Parte II · XGBoost,XGBoost ej7_intra_atitlan: S vs multinúcleo,0.60×,0.60×,✓
+Parte II · XGBoost,XGBoost ej7_intra_amatitlan: S vs secuencial,0.44×,0.44×,✓
+Parte II · XGBoost,XGBoost ej7_intra_amatitlan: S vs multinúcleo,0.31×,0.31×,✓
+Parte II · Regresión Logística,RL representativo busqueda: S vs secuencial,8.0×,8.0×,✓
+Parte II · Regresión Logística,RL representativo busqueda: S vs multinúcleo,6.3×,6.3×,✓
+Parte II · Regresión Logística,RL representativo entrenamiento: S vs secuencial,15.8×,15.8×,✓
+Parte II · Regresión Logística,RL representativo entrenamiento: S vs multinúcleo,15.3×,15.3×,✓
+Parte II · Regresión Logística,RL representativo prediccion: S vs secuencial,11.9×,11.9×,✓
+Parte II · Regresión Logística,RL representativo prediccion: S vs multinúcleo,11.8×,11.8×,✓
+Parte II · XGBoost,XGBoost representativo busqueda: S vs secuencial,1.60×,1.60×,✓
+Parte II · XGBoost,XGBoost representativo busqueda: S vs multinúcleo,0.64×,0.64×,✓
+Parte II · XGBoost,XGBoost representativo entrenamiento: S vs secuencial,1.37×,1.37×,✓
+Parte II · XGBoost,XGBoost representativo entrenamiento: S vs multinúcleo,0.50×,0.50×,✓
+Parte II · XGBoost,XGBoost representativo prediccion: S vs secuencial,57×,57×,✓
+Parte II · XGBoost,XGBoost representativo prediccion: S vs multinúcleo,9.6×,9.6×,✓
+Parte II · con y sin copias,RL protocolo: GPU sin copias (cota),2.91 s,2.91 s,✓
+Parte II · con y sin copias,RL protocolo: S sin copias vs secuencial (cota: a lo sumo),10.2×,10.2×,✓
+Parte II · con y sin copias,RL protocolo: S sin copias vs multinúcleo (cota: a lo sumo),7.9×,7.9×,✓
+Parte II · con y sin copias,RL entrenamiento: GPU sin copias,0.0319 s,0.0319 s,✓
+Parte II · con y sin copias,RL entrenamiento: S sin copias vs secuencial,16.8×,16.8×,✓
+Parte II · con y sin copias,RL entrenamiento: S sin copias vs multinúcleo,16.3×,16.3×,✓
+Parte II · con y sin copias,RL predicción: GPU sin copias,0.00022 s,0.00022 s,✓
+Parte II · con y sin copias,RL predicción: S sin copias vs secuencial,70×,68×,✗
+Parte II · con y sin copias,RL predicción: S sin copias vs multinúcleo,69×,67×,✗
+Parte II · con y sin copias,XGBoost protocolo: GPU sin copias (cota),92.7 s,92.7 s,✓
+Parte II · con y sin copias,XGBoost protocolo: S sin copias vs secuencial,1.30×,1.30×,✓
+Parte II · con y sin copias,XGBoost protocolo: S sin copias vs multinúcleo,0.53×,0.53×,✓
+Parte II · con y sin copias,XGBoost entrenamiento final: GPU sin copias,1.288 s,1.286 s,✗
+Parte II · con y sin copias,XGBoost entrenamiento final: S sin copias vs secuencial,1.38×,1.38×,✓
+Parte II · con y sin copias,XGBoost entrenamiento final: S sin copias vs multinúcleo,0.50×,0.50×,✓
+Parte II · con y sin copias,XGBoost predicción: GPU sin copias,0.00186 s,0.00187 s,✗
+Parte II · con y sin copias,XGBoost predicción: S sin copias vs secuencial,86×,86×,✓
+Parte II · con y sin copias,XGBoost predicción: S sin copias vs multinúcleo,14×,14×,✓
+"Parte II · XGBoost, mismos hiperparámetros",XGBoost ajuste controlado: S vs secuencial,2.85×,2.85×,✓
+"Parte II · XGBoost, mismos hiperparámetros",XGBoost ajuste controlado: S vs multinúcleo,1.19×,1.19×,✓
+"Parte II · XGBoost, mismos hiperparámetros",XGBoost ajuste controlado: S sin copias vs secuencial,2.87×,2.87×,✓
+"Parte II · XGBoost, mismos hiperparámetros",XGBoost ajuste controlado: S sin copias vs multinúcleo,1.20×,1.20×,✓
+Parte II · con y sin copias,XGBoost ajuste controlado: GPU sin copias,0.628 s,0.628 s,✓
+"Parte II · XGBoost, mismos hiperparámetros",XGBoost predicción controlada: S vs secuencial (≈),66×,67×,✗
+"Parte II · XGBoost, mismos hiperparámetros",XGBoost predicción controlada: S vs multinúcleo (≈),15×,15×,✓
+"Parte II · XGBoost, escalabilidad",XGBoost 3.75 M: S vs secuencial,16.7×,16.7×,✓
+"Parte II · XGBoost, escalabilidad",XGBoost 3.75 M: S vs multinúcleo,7.0×,7.0×,✓
+"Parte II · XGBoost, escalabilidad",XGBoost 3.75 M: S sin copias vs secuencial,17.1×,17.1×,✓
+"Parte II · XGBoost, escalabilidad",XGBoost 3.75 M: S sin copias vs multinúcleo,7.2×,7.2×,✓
+Parte II · con y sin copias,XGBoost 3.75 M: GPU sin copias,1.361 s,1.361 s,✓
+"Parte II · XGBoost, escalabilidad",XGBoost predicción 1.6 M: S vs secuencial,56×,56×,✓
+"Parte II · XGBoost, escalabilidad",XGBoost predicción 1.6 M: S vs multinúcleo,11.7×,11.7×,✓
+Parte II · con y sin copias,XGBoost predicción 1.6 M: S sin copias vs secuencial,127×,127×,✓
+Parte II · con y sin copias,XGBoost predicción 1.6 M: S sin copias vs multinúcleo,27×,27×,✓
+Parte II · con y sin copias,XGBoost predicción 1.6 M: GPU sin copias,0.0140 s,0.0140 s,✓
+"Parte II · XGBoost, escalabilidad",Crecimiento del ajuste GPU (281 mil → 3.75 M),2.2×,2.2×,✓
+"Parte II · XGBoost, escalabilidad",Crecimiento del ajuste CPU secuencial (281 mil → 3.75 M),12.9×,12.9×,✓
+"Parte II · XGBoost, escalabilidad",Crecimiento del ajuste CPU multinúcleo (281 mil → 3.75 M),13.0×,13.0×,✓
+"Parte II · XGBoost, escalabilidad",Costo fijo estimado por ajuste en GPU,0.57 s,0.57 s,✓
+"Parte II · XGBoost, escalabilidad",Costo por fila en GPU (µs),0.22,0.22,✓
+"Parte II · XGBoost, escalabilidad",Costo fijo como % del ajuste de 281 mil filas,90 %,90 %,✓
+Parte II · con y sin copias,Copia xy (ms),2.01,2.01,✓
+Parte II · con y sin copias,Copia x_prueba (ms),0.83,0.83,✓
+Parte II · con y sin copias,Copia prob_rl (ms),0.21,0.21,✓
+Parte II · con y sin copias,Copia prob_xgb (ms),0.11,0.11,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: filas_csv,597,597,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: vueltas,15,15,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: util_max,65,65,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: util_prom,18.7,18.7,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: umem_max,21,21,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: umem_prom,5.6,5.6,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: mem_max,243,243,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: mem_prom,236.7,236.7,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: pot_max,60,60,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: pot_prom,43.9,43.9,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: temp_max,67,67,✓
+Parte II · nvidia-smi,nvidia-smi Regresión Logística: temp_prom,60.2,60.2,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: filas_csv,476,476,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: vuelta_max_s,96.3,96.3,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: calentamiento_s,3.4,3.4,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: util_max,48,48,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: util_prom,38.2,38.2,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: umem_max,8,8,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: umem_prom,2.4,2.4,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: mem_max,337,337,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: mem_prom,280.5,280.5,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: pot_max,53.2,53.2,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: pot_prom,45.7,45.7,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: temp_max,65,65,✓
+Parte II · nvidia-smi,nvidia-smi XGBoost: temp_prom,60.2,60.2,✓
+Parte II · validación RL,RL: ajustes de ej4 que pasan A/B1/B2/B3,11,11,✓
+Parte II · validación RL,RL: máx |Δ PR-AUC| en el protocolo (×1e-3),1.7,1.7,✓
+Parte II · validación RL,RL: máx |Δ ROC-AUC| en el protocolo (×1e-4),2.4,2.4,✓
+Parte II · validación RL,RL: máx |Δ F2| en el protocolo (×1e-3),9.4,9.4,✓
+Parte II · validación XGBoost,XGBoost: experimentos que fallan B1,5,5,✓
+Parte II · validación XGBoost,XGBoost mismos hiperparámetros: máx |Δ PR-AUC| (×1e-4),6.3,6.3,✓
+Parte II · validación XGBoost,XGBoost mismos hiperparámetros: máx |Δ ROC-AUC| (×1e-4),5.9,5.9,✓
+Parte II · validación XGBoost,XGBoost prueba extendida: experimentos comparables al ruido,5,5,✓
+Parte II · validación XGBoost,XGBoost prueba extendida: razón GPU / ruido máxima,1.63,1.63,✓
+Parte II · preparación de datos,Construcción del dataset: CPU secuencial,13.044 s,13.044 s,✓
+Parte II · preparación de datos,Construcción del dataset: CPU multinúcleo,5.881 s,5.881 s,✓
+Parte II · preparación de datos,Construcción del dataset: speedup,2.2×,2.2×,✓

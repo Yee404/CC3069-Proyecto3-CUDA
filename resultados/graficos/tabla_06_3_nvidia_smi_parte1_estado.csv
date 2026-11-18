@@ -1,0 +1,7 @@
+﻿Archivo,Bytes,Muestras,Utilización GPU máx. (%),Memoria usada (MiB),Estado
+parte1_k1_Amatitlan.csv,0,0,—,—,vacío: no se registró nada
+parte1_k1_Atitlan.csv,4096,39,0,363–363,"probablemente truncado (mide exactamente 4096 bytes, un bloque de escritura)"
+parte1_k2_Amatitlan.csv,0,0,—,—,vacío: no se registró nada
+parte1_k2_Atitlan.csv,4096,39,1,359–1137,truncado a 4096 bytes (la última línea quedó incompleta)
+parte1_k3_Amatitlan.csv,0,0,—,—,vacío: no se registró nada
+parte1_k3_Atitlan.csv,0,0,—,—,vacío: no se registró nada

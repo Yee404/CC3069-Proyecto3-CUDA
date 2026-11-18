@@ -1,0 +1,4 @@
+﻿Fase,Atitlán (s),Speedup Atitlán,Amatitlán (s),Speedup Amatitlán
+CPU secuencial (1 proceso),1.770 ± 0.216,1.0×,0.4673 ± 0.0160,1.0×
+CPU multinúcleo: 11 procesos (ProcessPoolExecutor),2.192 ± 0.020,0.81×,1.704 ± 0.011,0.27×
+CPU multinúcleo: 11 hilos (ThreadPoolExecutor),0.4764 ± 0.0130,3.7×,0.1979 ± 0.0042,2.4×

@@ -1,0 +1,13 @@
+﻿lago,fase,promedio_s,desviacion_s,speedup_vs_secuencial,speedup_desv,maquina
+Atitlán,"CPU secuencial (NumPy, como el notebook 02)",0.0472651199961546,0.0094187552051076,1.0,0.28181736030330723,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,CPU 1 núcleo (Numba),0.0229163400013931,0.000281928465587,2.0625073634481472,0.41178859038375154,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,CPU multinúcleo (Numba),0.0044399000064004,0.0003530124473034,10.645537045433208,2.284012539845331,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,GPU: kernel (sin copia),0.001185344004631,2.5357877338235875e-05,39.874601644328834,7.991666625493653,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,GPU: copia de histogramas GPU→CPU,5.853440091013909e-05,3.241207742003124e-06,,,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,GPU total (con la copia),0.0013439200061839,3.025023136882446e-05,35.1695932634899,7.05298683792807,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,"CPU secuencial (NumPy, como el notebook 02)",0.007043900003191,0.0003780420180528,1.0,0.07590001970995716,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,CPU 1 núcleo (Numba),0.0032078199961688,0.0006050559081069,2.1958526387402504,0.4306197832417838,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,CPU multinúcleo (Numba),0.00046038000728,2.547355056591872e-05,15.300186567195887,1.1794042012596586,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,GPU: kernel (sin copia),0.0005591231942176,3.1129568656809546e-06,12.598118046323883,0.6797620803686426,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,GPU: copia de histogramas GPU→CPU,0.0001029311984777,9.005263569772822e-05,,,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,GPU total (con la copia),0.0007588399865198,8.847280270718951e-05,9.282457604133132,1.1913963510499923,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"

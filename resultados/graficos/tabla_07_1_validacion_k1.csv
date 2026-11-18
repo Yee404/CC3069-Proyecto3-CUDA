@@ -1,0 +1,9 @@
+﻿Lago,Versión,Error máx. NDVI,Error máx. NDWI,Error máx. NDCI,Error máx. FAI,Error máx. Clorofila-a,NaN distintos,"Píxeles distintos en máscaras (agua, válidos, y_alta)",Píxeles-fecha comparados
+Atitlán,CPU 1 nucleo,0,0,0,6.0e-08,6.1e-05,0,0,13 297 680
+Atitlán,CPU multinucleo,0,0,0,6.0e-08,6.1e-05,0,0,13 297 680
+Atitlán,GPU simple,0,0,0,5.2e-08,6.1e-05,0,0,13 297 680
+Atitlán,GPU streams,0,0,0,5.2e-08,6.1e-05,0,0,13 297 680
+Amatitlán,CPU 1 nucleo,0,0,0,3.0e-08,6.1e-05,0,0,3 438 369
+Amatitlán,CPU multinucleo,0,0,0,3.0e-08,6.1e-05,0,0,3 438 369
+Amatitlán,GPU simple,0,0,0,6.0e-08,6.1e-05,0,0,3 438 369
+Amatitlán,GPU streams,0,0,0,6.0e-08,6.1e-05,0,0,3 438 369

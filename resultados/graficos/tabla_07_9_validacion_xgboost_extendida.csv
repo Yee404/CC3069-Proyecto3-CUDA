@@ -1,0 +1,6 @@
+﻿Experimento,Positivos en evaluación,Δ PR-AUC GPU−CPU,Ruido máx. (CPU sin 0.1 % de filas),Razón GPU / ruido,Δ ROC-AUC GPU−CPU,Filas que cambian de clase (GPU−CPU / ruido máx.),Lectura (razón ≤ 2)
+ej6_temporal,4847,+3.7e-03,0.0119,0.31,+9.3e-05,356 / 486,comparable al ruido
+ej6_cronologico,3736,+3.0e-03,0.0201,0.15,+3.3e-05,463 / 489,comparable al ruido
+ej7_atitlan_a_amatitlan,4700,-6.4e-02,0.0595,1.07,-1.5e-01,22 / 33,comparable al ruido
+ej7_amatitlan_a_atitlan,166,-2.1e-02,0.0149,1.40,+5.7e-03,54 / 45,comparable al ruido
+ej7_intra_atitlan,50,-3.5e-02,0.0216,1.63,+3.3e-05,19 / 12,comparable al ruido

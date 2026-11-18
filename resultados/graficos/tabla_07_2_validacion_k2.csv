@@ -1,0 +1,7 @@
+﻿Lago,Versión,Máscara del lago: píxeles distintos,Conteos y porcentajes: dif. máx.,Estadísticas: dif. relativa máx.,Columna con esa diferencia
+Atitlán,CPU 1 nucleo,0,0,2.2e-07,chla_max
+Atitlán,CPU multinucleo,0,0,2.2e-07,chla_max
+Atitlán,GPU,0,0,1.0e-06,chla_mediana
+Amatitlán,CPU 1 nucleo,0,0,2.1e-07,ndvi_medio
+Amatitlán,CPU multinucleo,0,0,2.1e-07,ndvi_medio
+Amatitlán,GPU,0,0,2.1e-07,ndvi_medio

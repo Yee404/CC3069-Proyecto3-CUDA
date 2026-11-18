@@ -1,0 +1,9 @@
+﻿lago,fase,promedio_s,desviacion_s,speedup_vs_secuencial,speedup_desv,maquina
+Atitlán,CPU secuencial (lab4),1.5183594000001903,0.1566276481268218,1.0,0.14588439616043775,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,CPU multinúcleo (Numba),0.1308896999980788,0.0020883681476268,11.600297044171365,1.2108674418655165,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,"GPU, los datos se quedan en la GPU (copia el cubo, devuelve solo estadísticas)",0.1129999599943403,0.0021263441018052,13.436813606626398,1.4089584129306578,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Atitlán,"GPU, devolviendo también las capas (copia de capas y máscaras al CPU)",0.1749549200059846,0.002052189891858,8.678575029203252,0.9010148766031784,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,CPU secuencial (lab4),0.3106849200034048,0.0169499218372196,1.0,0.07715472428818608,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,CPU multinúcleo (Numba),0.030309900001157,0.0022100427182129,10.250278621557486,0.9334512591725916,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,"GPU, los datos se quedan en la GPU (copia el cubo, devuelve solo estadísticas)",0.0342907999991439,0.0056018532162575,9.060299555891413,1.5604757163372265,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"
+Amatitlán,"GPU, devolviendo también las capas (copia de capas y máscaras al CPU)",0.0475645000056829,0.0011741298640659,6.531865571303911,0.3911368780049708,"Máquina: nadissa.json · i7-11800H + RTX 3050 Laptop (4 GB) · Parte I, corridas del 2026-11-15"

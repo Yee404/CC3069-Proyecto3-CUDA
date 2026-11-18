@@ -1,0 +1,12 @@
+﻿Fase,Atitlán (s),Amatitlán (s)
+Lectura y reflectancia (leer_bandas),1.661 ± 0.026,0.6498 ± 0.0565
+Máscara de válidos,0.08518 ± 0.00141,0.01811 ± 0.00258
+NDVI,0.08804 ± 0.00679,0.02568 ± 0.00232
+NDWI,0.08448 ± 0.00212,0.02362 ± 0.00163
+NDCI,0.08468 ± 0.00100,0.02688 ± 0.00412
+FAI,0.06881 ± 0.00485,0.01962 ± 0.00329
+Clorofila-a,0.2162 ± 0.0112,0.07785 ± 0.01222
+Máscara de agua,0.5414 ± 0.0094,0.1628 ± 0.0187
+"K1 completo (índices y máscaras, sin la lectura)",1.154 ± 0.029,0.3389 ± 0.0256
+Máscara fija del lago,0.02791 ± 0.00050,0.008208 ± 0.001245
+K2: estadísticas por fecha,0.1897 ± 0.0067,0.02754 ± 0.00723

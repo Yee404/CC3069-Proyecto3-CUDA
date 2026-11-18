@@ -1,0 +1,9 @@
+﻿Fase,Atitlán (s),Speedup Atitlán,Amatitlán (s),Speedup Amatitlán
+"CPU secuencial (lab4, NumPy)",1.295 ± 0.120,1.0×,0.3976 ± 0.0558,1.0×
+CPU 1 núcleo (Numba),0.3297 ± 0.0474,3.9×,0.05779 ± 0.00199,6.9×
+CPU multinúcleo (Numba prange),0.1087 ± 0.0038,11.9×,0.02420 ± 0.00137,16.4×
+GPU: copia CPU→GPU,0.09494 ± 0.01556,,0.02208 ± 0.00114,
+GPU: kernel (sin copias),0.004480 ± 0.000032,289×,0.001203 ± 0.000025,330×
+GPU: copia GPU→CPU,0.07710 ± 0.00361,,0.01672 ± 0.00070,
+GPU total con copias (modo simple),0.1941 ± 0.0188,6.7×,0.04470 ± 0.00294,8.9×
+"GPU total con copias (streams, 2 fechas por lote)",0.1705 ± 0.0023,7.6×,0.04084 ± 0.00088,9.7×

@@ -1,0 +1,7 @@
+﻿Lago,Versión,Bins con conteo distinto,Dif. máx. de conteo,Valores contados,Valores contados (NumPy)
+Atitlán,CPU 1 nucleo,0,0,3355791,3355791
+Atitlán,CPU multinucleo,0,0,3355791,3355791
+Atitlán,GPU,0,0,3355791,3355791
+Amatitlán,CPU 1 nucleo,0,0,399324,399324
+Amatitlán,CPU multinucleo,0,0,399324,399324
+Amatitlán,GPU,0,0,399324,399324

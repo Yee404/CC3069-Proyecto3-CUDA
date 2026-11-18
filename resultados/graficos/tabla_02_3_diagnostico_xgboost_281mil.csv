@@ -1,0 +1,9 @@
+﻿Fase,GPU (s),CPU secuencial (s),CPU multinúcleo (s)
+"Copia X,y CPU→GPU",0.00400 ± 0.00192,—,—
+Construir QuantileDMatrix,0.00968 ± 0.00049,0.492 ± 0.008,0.0938 ± 0.0024
+Entrenamiento (100 árboles),0.652 ± 0.023,1.40 ± 0.09,0.556 ± 0.046
+Copia X de prueba CPU→GPU,0.00142 ± 0.00008,—,—
+Predicción,0.00640 ± 0.00401,0.166 ± 0.002,0.0252 ± 0.0001
+Copia del resultado GPU→CPU,0.000258 ± 0.000216,—,—
+Ruta real ajustar() (la del protocolo),0.632 ± 0.003,1.80 ± 0.14,0.754 ± 0.068
+Ruta real probabilidad(),0.00213 ± 0.00002,0.141 ± 0.001,0.0320 ± 0.0075

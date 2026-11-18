@@ -1,0 +1,13 @@
+﻿Modelo,Fase,CPU sec. (s),CPU multi. (s),GPU con copias (s),S con copias (vs sec. / vs multi.),GPU sin copias (s),S sin copias (vs sec. / vs multi.)
+Regresión Logística,"Protocolo completo (75 ajustes), 3 pasadas",29.52,23.06,3.14,9.4× / 7.4×,≥ 2.91,≤ 10.2× / ≤ 7.9×
+Regresión Logística,Búsqueda ej4 (9 ajustes + predicción de validación),3.45,2.69,0.430,8.0× / 6.3×,—,—
+Regresión Logística,Entrenamiento ej4 final (281 255 filas),0.535,0.519,0.0339,15.8× / 15.3×,≈ 0.0319,≈ 16.8× / ≈ 16.3×
+Regresión Logística,Predicción ej4 prueba (120 538 filas),0.0150,0.0148,0.00126,11.9× / 11.8×,≈ 0.000216,≈ 70× / ≈ 69×
+XGBoost,"Protocolo completo (93 ajustes), 3 pasadas ⚠",120.90,49.61,93.27,1.30× / 0.53×,≥ 92.74,≤ 1.30× / ≤ 0.53×
+XGBoost,Búsqueda ej4 (12 ajustes + predicción de validación),17.78,7.07,11.08,1.60× / 0.64×,—,—
+XGBoost,Entrenamiento ej4 final (281 255 filas) ⚠ 31 hojas CPU / 63 GPU,1.77,0.641,1.29,1.37× / 0.50×,≈ 1.29,≈ 1.38× / ≈ 0.50×
+XGBoost,Predicción ej4 prueba (120 538 filas) ⚠ 31 hojas CPU / 63 GPU,0.161,0.0270,0.00281,57× / 9.61×,≈ 0.00186,≈ 86× / ≈ 14.5×
+XGBoost,"Ajuste con los mismos hiperparámetros, 281 255 filas",1.80,0.754,0.632,2.85× / 1.19×,≈ 0.628,≈ 2.87× / ≈ 1.20×
+XGBoost,"Predicción con el mismo modelo, 120 538 filas",0.141,0.0320,0.00213,66× / 15.0×,—,—
+XGBoost,Ajuste con 3 750 000 filas (replicadas),23.30,9.80,1.40,16.7× / 7.01×,≈ 1.36,≈ 17.1× / ≈ 7.20×
+XGBoost,Predicción de 1 607 145 filas (replicadas),1.78,0.377,0.0321,56× / 11.7×,≈ 0.0140,≈ 127× / ≈ 27×

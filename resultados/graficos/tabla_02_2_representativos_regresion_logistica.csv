@@ -1,0 +1,4 @@
+﻿Unidad (ej4),CPU secuencial (s),CPU multinúcleo (s),GPU (s),S vs secuencial,S vs multinúcleo
+Búsqueda ej4 (9 ajustes + predicción de validación),3.45 ± 0.04,2.69 ± 0.07,0.430 ± 0.006,8.0×,6.3×
+Entrenamiento ej4 final (281 255 filas),0.535 ± 0.005,0.519 ± 0.019,0.0339 ± 0.0001,15.8×,15.3×
+Predicción ej4 prueba (120 538 filas),0.0150 ± 0.0001,0.0148 ± 0.0008,0.00126 ± 0.00001,11.9×,11.8×

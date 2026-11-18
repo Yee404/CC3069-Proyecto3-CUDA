@@ -1,0 +1,6 @@
+﻿Fase,CPU secuencial (s),CPU multinúcleo (s),Speedup,Corridas
+Construccion del dataset (22 escenas),13.04 ± 0.28,5.881 ± 0.093 (6 procesos),2.2×,3
+Lectura de dataset_ml.csv,0.6956 ± 0.0161,—,—,5
+Lectura de matrices_ml.npz,0.01603 ± 0.00146,—,—,5
+DataFrame -> X/y float32,0.01360 ± 0.00026,—,—,5
+Particiones (9 experimentos),1.790 ± 0.009,—,—,5

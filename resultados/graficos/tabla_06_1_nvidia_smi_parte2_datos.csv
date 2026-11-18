@@ -1,0 +1,3 @@
+﻿modelo,filas_csv,muestras,vueltas,vuelta_min_s,vuelta_max_s,calentamiento_s,util_max,util_prom,umem_max,umem_prom,mem_max,mem_prom,pot_max,pot_prom,temp_max,temp_prom,maquina
+regresion_logistica,597.0,596.0,15.0,7.990000000000002,8.653,2.5229999999999997,65.0,18.700840336134455,21.0,5.61344537815126,243.0,236.70302013422818,59.95,43.93021812080537,67.0,60.238255033557046,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
+xgboost,476.0,476.0,1.0,96.265,96.265,3.378,48.0,38.19157894736842,8.0,2.393684210526316,337.0,280.45588235294116,53.22,45.6573949579832,65.0,60.20798319327731,"Máquina: yee.json · i9-11900H + RTX 3060 Laptop (6 GB) · Parte II, sesión de medición del 2026-11-17"
