@@ -7,7 +7,6 @@ Contrato (este módulo NO lee ni escribe archivos; recibe arreglos ya preparados
 
     entrenar_xgboost_gpu(X, y, params)  -> XGBClassifier ajustado en la GPU
     probabilidad_xgboost_gpu(modelo, X) -> ndarray NumPy (n,) en el host con P(y = 1)
-    shap_gpu(modelo, X)                 -> ESQUELETO (opcional; se hace después de validar T3/T4)
 
 `X` e `y` pueden ser:
     * arreglos NumPy en el host (float32 C-contiguo / int8): se copian a la GPU en cada llamada,
@@ -73,14 +72,3 @@ def probabilidad_xgboost_gpu(modelo: xgb.XGBClassifier, X) -> np.ndarray:
     proba = modelo.predict_proba(_a_gpu(X))[:, 1]
     _sincronizar()
     return cp.asnumpy(proba)  # acepta también un ndarray de NumPy
-
-
-def shap_gpu(modelo: xgb.XGBClassifier, X):
-    """ESQUELETO (opcional). SHAP en GPU con GPUTreeShap de XGBoost.
-
-    Idea para cuando se haga (después de validar T3 y T4):
-        contribuciones = modelo.get_booster().predict(
-            xgb.DMatrix(_a_gpu(X)), pred_contribs=True)   # (n, 13 + 1): la última es el sesgo
-    y compararlo contra TreeSHAP en CPU sobre la misma submuestra (PLAN.md §6.2).
-    """
-    raise NotImplementedError("SHAP en GPU: pendiente (opcional, PLAN.md §6.2).")
