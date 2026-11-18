@@ -1,0 +1,11 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+protocolo ej4_busqueda,CPU multinucleo,3.284247600000223,0.09209268228711293,3.384303;3.265410;3.203030,10 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej6_aleatoria,CPU multinucleo,2.625509933332978,0.09646731170603395,2.642617;2.712279;2.521633,5 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej6_espacial,CPU multinucleo,2.6242414666670206,0.04367699419007965,2.638300;2.659158;2.575266,5 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej6_temporal,CPU multinucleo,2.62295573333328,0.046789318855935506,2.596364;2.595522;2.676981,5 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej6_cronologico,CPU multinucleo,3.8337041333328066,0.09608708630954757,3.810981;3.751016;3.939116,10 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej7_atitlan_a_amatitlan,CPU multinucleo,4.2694599333335645,0.08927517505001158,4.260863;4.184794;4.362723,10 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej7_amatitlan_a_atitlan,CPU multinucleo,0.42948683333300625,0.011276201398951394,0.430117;0.417909;0.440435,10 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej7_intra_atitlan,CPU multinucleo,3.048535533333355,0.009515864659716653,3.039649;3.047382;3.058576,10 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo ej7_intra_amatitlan,CPU multinucleo,0.320118966666693,0.0019529418636191277,0.318477;0.319602;0.322278,10 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060
+protocolo completo,CPU multinucleo,23.058260133332926,0.09173534724177024,23.121669;22.953072;23.100039,75 ajustes; 3 pasadas completas; sin metricas; maquina=rtx3060

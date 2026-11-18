@@ -1,0 +1,10 @@
+experimento,mismos_hiperparametros,max_dif_pr_auc,max_dif_roc_auc,max_dif_f2,max_dif_conteos_matriz,metricas_identicas
+ej4_busqueda,True,0.0,0.0,0.0,0,True
+ej6_aleatoria,True,0.0,0.0,0.0,0,True
+ej6_espacial,True,0.0,0.0,0.0,0,True
+ej6_temporal,True,0.0,0.0,0.0,0,True
+ej6_cronologico,True,0.0,0.0,0.0,0,True
+ej7_atitlan_a_amatitlan,True,0.0,0.0,0.0,0,True
+ej7_amatitlan_a_atitlan,True,0.0,0.0,0.0,0,True
+ej7_intra_atitlan,True,0.0,0.0,0.0,0,True
+ej7_intra_amatitlan,True,0.0,0.0,0.0,0,True

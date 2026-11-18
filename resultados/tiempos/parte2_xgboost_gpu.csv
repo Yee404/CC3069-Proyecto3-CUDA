@@ -1,0 +1,14 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+protocolo ej4_busqueda,GPU,11.656649399999992,0.0,11.656649,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_aleatoria,GPU,5.977279999999979,0.0,5.977280,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_espacial,GPU,5.927102099999985,0.0,5.927102,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_temporal,GPU,5.957896299999987,0.0,5.957896,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_cronologico,GPU,11.502008200000006,0.0,11.502008,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_atitlan_a_amatitlan,GPU,11.247964200000013,0.0,11.247964,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_amatitlan_a_atitlan,GPU,11.78039369999999,0.0,11.780394,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_intra_atitlan,GPU,11.482580699999971,0.0,11.482581,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_intra_amatitlan,GPU,11.180526200000031,0.0,11.180526,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo completo,GPU,86.71240079999995,0.0,86.712401,1 pasada; 93 ajustes; maquina=rtx3060
+representativo: busqueda ej4 (12 ajustes + prediccion de validacion),GPU,11.082827180000004,0.19490500679002265,10.883418;10.988059;10.980966;11.195972;11.365722,gpu; 8 procesos; maquina=rtx3060
+representativo: entrenamiento ej4 final (281255 filas),GPU,1.2899048200000038,0.04470559996598913,1.277533;1.260085;1.368760;1.266012;1.277134,gpu; maquina=rtx3060
+representativo: prediccion ej4 prueba (120538 filas),GPU,0.002807219999999688,4.363435575421306e-05,0.002832;0.002863;0.002808;0.002750;0.002783,gpu; maquina=rtx3060

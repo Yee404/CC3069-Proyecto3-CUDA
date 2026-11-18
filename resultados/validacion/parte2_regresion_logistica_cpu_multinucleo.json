@@ -39,69 +39,69 @@
   "tiempos_por_experimento": {
     "ej4_busqueda": {
       "n_ajustes": 10,
-      "tiempo_pared_s": 4.081710599999951,
-      "suma_ajustes_s": 18.914544400000523,
-      "suma_predicciones_s": 0.39195710000012696
+      "tiempo_pared_s": 3.3560268000000235,
+      "suma_ajustes_s": 17.92690669999996,
+      "suma_predicciones_s": 0.3505839000000037
     },
     "ej6_aleatoria": {
       "n_ajustes": 5,
-      "tiempo_pared_s": 2.6785501999997905,
-      "suma_ajustes_s": 11.736373699999604,
-      "suma_predicciones_s": 0.13427620000038587
+      "tiempo_pared_s": 2.6734469999999817,
+      "suma_ajustes_s": 10.819052699999986,
+      "suma_predicciones_s": 0.1117718999999795
     },
     "ej6_espacial": {
       "n_ajustes": 5,
-      "tiempo_pared_s": 2.8241738000001533,
-      "suma_ajustes_s": 12.119176600000173,
-      "suma_predicciones_s": 0.14259399999946254
+      "tiempo_pared_s": 2.6188629000000105,
+      "suma_ajustes_s": 11.42902300000003,
+      "suma_predicciones_s": 0.10131799999999203
     },
     "ej6_temporal": {
       "n_ajustes": 5,
-      "tiempo_pared_s": 2.9718784000001506,
-      "suma_ajustes_s": 12.12259479999966,
-      "suma_predicciones_s": 0.13229830000045695
+      "tiempo_pared_s": 2.8957101999999963,
+      "suma_ajustes_s": 12.776196699999986,
+      "suma_predicciones_s": 0.13126859999999851
     },
     "ej6_cronologico": {
       "n_ajustes": 10,
-      "tiempo_pared_s": 4.396257400000195,
-      "suma_ajustes_s": 20.823625399999855,
-      "suma_predicciones_s": 0.38519499999983964
+      "tiempo_pared_s": 3.8226147999999966,
+      "suma_ajustes_s": 19.91301420000005,
+      "suma_predicciones_s": 0.3490972999999542
     },
     "ej7_atitlan_a_amatitlan": {
       "n_ajustes": 10,
-      "tiempo_pared_s": 4.72956639999984,
-      "suma_ajustes_s": 24.732874400000583,
-      "suma_predicciones_s": 0.5109778000000915
+      "tiempo_pared_s": 4.251419100000021,
+      "suma_ajustes_s": 23.611345699999987,
+      "suma_predicciones_s": 0.4492144999999823
     },
     "ej7_amatitlan_a_atitlan": {
       "n_ajustes": 10,
-      "tiempo_pared_s": 0.5820269999994707,
-      "suma_ajustes_s": 1.2957727999996678,
-      "suma_predicciones_s": 0.09339490000002115
+      "tiempo_pared_s": 0.43086130000000367,
+      "suma_ajustes_s": 1.0547917000000098,
+      "suma_predicciones_s": 0.06497730000000956
     },
     "ej7_intra_atitlan": {
       "n_ajustes": 10,
-      "tiempo_pared_s": 3.523613700000169,
-      "suma_ajustes_s": 16.377236900000298,
-      "suma_predicciones_s": 0.3477173000005678
+      "tiempo_pared_s": 3.111617999999993,
+      "suma_ajustes_s": 16.035049299999997,
+      "suma_predicciones_s": 0.313285900000011
     },
     "ej7_intra_amatitlan": {
       "n_ajustes": 10,
-      "tiempo_pared_s": 0.4305618999997023,
-      "suma_ajustes_s": 0.9457579999998416,
-      "suma_predicciones_s": 0.02543450000030134
+      "tiempo_pared_s": 0.32466109999998594,
+      "suma_ajustes_s": 0.6543296999999768,
+      "suma_predicciones_s": 0.018384199999957218
     }
   },
-  "tiempo_pared_total_s": 26.218339399999422,
+  "tiempo_pared_total_s": 23.485221200000012,
   "n_procesos": 8,
-  "fecha": "2026-11-16T19:41:20",
+  "fecha": "2026-11-17T15:13:27",
   "paquetes": {
     "scikit-learn": "1.9.1",
     "xgboost": "3.4.1",
     "numpy": "2.4.6"
   },
   "repeticiones": 5,
-  "calentamiento": 1,
+  "calentamiento": 3,
   "maquina": "rtx3060",
   "representativos": true
 }

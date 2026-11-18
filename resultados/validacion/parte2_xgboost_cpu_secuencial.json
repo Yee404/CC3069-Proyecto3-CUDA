@@ -45,69 +45,69 @@
   "tiempos_por_experimento": {
     "ej4_busqueda": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 34.93194249999999,
-      "suma_ajustes_s": 31.522962500000062,
-      "suma_predicciones_s": 2.989545999999848
+      "tiempo_pared_s": 19.84593670000004,
+      "suma_ajustes_s": 18.013897500000013,
+      "suma_predicciones_s": 1.6034196999999608
     },
     "ej6_aleatoria": {
       "n_ajustes": 5,
-      "tiempo_pared_s": 20.229650600000014,
-      "suma_ajustes_s": 19.14924780000007,
-      "suma_predicciones_s": 0.9805299999999306
+      "tiempo_pared_s": 10.715729199999998,
+      "suma_ajustes_s": 10.150929700000006,
+      "suma_predicciones_s": 0.5115095000000167
     },
     "ej6_espacial": {
       "n_ajustes": 5,
-      "tiempo_pared_s": 19.9834831,
-      "suma_ajustes_s": 18.891671300000098,
-      "suma_predicciones_s": 1.0028631999998652
+      "tiempo_pared_s": 10.233745399999975,
+      "suma_ajustes_s": 9.674770500000022,
+      "suma_predicciones_s": 0.5071480000000008
     },
     "ej6_temporal": {
       "n_ajustes": 5,
-      "tiempo_pared_s": 19.992240200000026,
-      "suma_ajustes_s": 18.845653000000027,
-      "suma_predicciones_s": 1.0616901999999868
+      "tiempo_pared_s": 10.144241499999993,
+      "suma_ajustes_s": 9.599381300000005,
+      "suma_predicciones_s": 0.5006124999999599
     },
     "ej6_cronologico": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 37.38382560000014,
-      "suma_ajustes_s": 34.04634649999957,
-      "suma_predicciones_s": 3.1528309000002537
+      "tiempo_pared_s": 18.859231600000015,
+      "suma_ajustes_s": 17.219848900000045,
+      "suma_predicciones_s": 1.5410427999999854
     },
     "ej7_atitlan_a_amatitlan": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 41.83657679999999,
-      "suma_ajustes_s": 38.03637129999993,
-      "suma_predicciones_s": 3.5734604000003856
+      "tiempo_pared_s": 21.56007740000001,
+      "suma_ajustes_s": 19.742058800000024,
+      "suma_predicciones_s": 1.6983727999999587
     },
     "ej7_amatitlan_a_atitlan": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 12.515201899999965,
-      "suma_ajustes_s": 11.073424299999829,
-      "suma_predicciones_s": 1.3998113000000103
+      "tiempo_pared_s": 6.420408699999939,
+      "suma_ajustes_s": 5.650990600000057,
+      "suma_predicciones_s": 0.7476327999998489
     },
     "ej7_intra_atitlan": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 33.13636009999993,
-      "suma_ajustes_s": 29.980285500000036,
-      "suma_predicciones_s": 2.737447399999951
+      "tiempo_pared_s": 16.859174499999995,
+      "suma_ajustes_s": 15.412763200000086,
+      "suma_predicciones_s": 1.244263599999897
     },
     "ej7_intra_amatitlan": {
       "n_ajustes": 13,
-      "tiempo_pared_s": 10.768561400000067,
-      "suma_ajustes_s": 10.194775000000163,
-      "suma_predicciones_s": 0.5367524000000685
+      "tiempo_pared_s": 5.411529400000006,
+      "suma_ajustes_s": 5.141960799999936,
+      "suma_predicciones_s": 0.2491483000000585
     }
   },
-  "tiempo_pared_total_s": 230.77784220000012,
+  "tiempo_pared_total_s": 120.05007439999997,
   "n_procesos": 8,
-  "fecha": "2026-11-16T18:51:19",
+  "fecha": "2026-11-17T15:32:38",
   "paquetes": {
     "scikit-learn": "1.9.1",
     "xgboost": "3.4.1",
     "numpy": "2.4.6"
   },
   "repeticiones": 5,
-  "calentamiento": 1,
+  "calentamiento": 3,
   "maquina": "rtx3060",
   "representativos": true
 }

@@ -1,0 +1,5 @@
+fase,version,promedio_s,desviacion_s,corridas_s,notas
+"copias: X,y de entrenamiento CPU->GPU (281255 filas, 14.9 MB)",GPU,0.002014340000005177,9.062057161885457e-05,0.002169;0.002017;0.001945;0.001977;0.001963,ej4; maquina=rtx3060
+"copias: X de prueba CPU->GPU (120538 filas, 6.3 MB)",GPU,0.0008310199999868928,5.592584384184448e-06,0.000831;0.000823;0.000831;0.000831;0.000839,ej4; maquina=rtx3060
+"copias: probabilidades GPU->CPU float64, Regresion Logistica (120538 valores)",GPU,0.00021460000002662127,4.633033602173106e-06,0.000216;0.000222;0.000213;0.000211;0.000211,ej4; maquina=rtx3060
+"copias: probabilidades GPU->CPU float32, XGBoost (120538 valores)",GPU,0.00011285999999017804,1.2953763430406571e-06,0.000115;0.000112;0.000113;0.000111;0.000112,ej4; maquina=rtx3060

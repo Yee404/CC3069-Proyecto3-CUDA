@@ -1,0 +1,3 @@
+modelo,umbral,accuracy,precision,recall,f1,f2,roc_auc,pr_auc,VN,FP,FN,VP,algoritmo,variante,experimento,etapa,criterio_umbral,hiperparametros,n_entrenamiento,n_evaluacion,positivos_evaluacion
+xgboost,0.5,0.9994207225372352,0.425,0.7168674698795181,0.5336322869955157,0.6302966101694916,0.9973645018914113,0.42571269853158417,358741,161,47,119,xgboost,gpu,ej7_amatitlan_a_atitlan,prueba,0.5,"{""learning_rate"": 0.1, ""max_leaves"": 63}",42725,359068,166
+xgboost,0.0646,0.9992146334399056,0.355,0.8554216867469879,0.5017667844522968,0.6672932330827067,0.9973645018914113,0.42571269853158417,358644,258,24,142,xgboost,gpu,ej7_amatitlan_a_atitlan,prueba,optimo F2,"{""learning_rate"": 0.1, ""max_leaves"": 63}",42725,359068,166

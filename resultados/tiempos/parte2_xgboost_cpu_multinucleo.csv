@@ -1,14 +1,14 @@
 fase,version,promedio_s,desviacion_s,corridas_s,notas
-protocolo ej4_busqueda,CPU multinucleo,11.963074400000096,0.0,11.963074,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo ej6_aleatoria,CPU multinucleo,4.711236699999972,0.0,4.711237,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
-protocolo ej6_espacial,CPU multinucleo,4.62187449999999,0.0,4.621874,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
-protocolo ej6_temporal,CPU multinucleo,4.722281800000019,0.0,4.722282,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
-protocolo ej6_cronologico,CPU multinucleo,10.015884700000015,0.0,10.015885,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo ej7_atitlan_a_amatitlan,CPU multinucleo,10.757056899999952,0.0,10.757057,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo ej7_amatitlan_a_atitlan,CPU multinucleo,5.280754600000137,0.0,5.280755,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo ej7_intra_atitlan,CPU multinucleo,9.123002100000122,0.0,9.123002,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo ej7_intra_amatitlan,CPU multinucleo,4.816879599999993,0.0,4.816880,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
-protocolo completo,CPU multinucleo,66.0120453000003,0.0,66.012045,1 pasada; 93 ajustes; maquina=rtx3060
-representativo: busqueda ej4 (12 ajustes + prediccion de validacion),CPU multinucleo,9.207480860000079,0.0755708634043516,9.328628;9.231602;9.177019;9.155885;9.144272,cpu_multinucleo; 8 procesos; maquina=rtx3060
-representativo: entrenamiento ej4 final (281255 filas),CPU multinucleo,0.8096319399999174,0.017374021415712013,0.795872;0.837631;0.799635;0.799599;0.815423,cpu_multinucleo; maquina=rtx3060
-representativo: prediccion ej4 prueba (120538 filas),CPU multinucleo,0.03699612000000343,0.0034135887475695258,0.037367;0.031158;0.037643;0.038988;0.039826,cpu_multinucleo; maquina=rtx3060
+protocolo ej4_busqueda,CPU multinucleo,7.232053199999996,0.0,7.232053,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_aleatoria,CPU multinucleo,3.2788783999999964,0.0,3.278878,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_espacial,CPU multinucleo,3.2495686999999975,0.0,3.249569,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_temporal,CPU multinucleo,3.392577200000005,0.0,3.392577,1 pasada; 5 ajustes; sin metricas; maquina=rtx3060
+protocolo ej6_cronologico,CPU multinucleo,7.216441400000008,0.0,7.216441,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_atitlan_a_amatitlan,CPU multinucleo,7.799858000000029,0.0,7.799858,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_amatitlan_a_atitlan,CPU multinucleo,3.7840212999999494,0.0,3.784021,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_intra_atitlan,CPU multinucleo,6.532130900000027,0.0,6.532131,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo ej7_intra_amatitlan,CPU multinucleo,3.5296795999999517,0.0,3.529680,1 pasada; 13 ajustes; sin metricas; maquina=rtx3060
+protocolo completo,CPU multinucleo,46.01520869999996,0.0,46.015209,1 pasada; 93 ajustes; maquina=rtx3060
+representativo: busqueda ej4 (12 ajustes + prediccion de validacion),CPU multinucleo,7.067924500000004,0.039068511785264784,7.053529;7.049096;7.087631;7.125002;7.024365,cpu_multinucleo; 8 procesos; maquina=rtx3060
+representativo: entrenamiento ej4 final (281255 filas),CPU multinucleo,0.6406194599999935,0.025289976206631773,0.617082;0.677169;0.641837;0.616686;0.650322,cpu_multinucleo; maquina=rtx3060
+representativo: prediccion ej4 prueba (120538 filas),CPU multinucleo,0.0269838400000026,0.0020839155292462024,0.026081;0.025382;0.025842;0.027070;0.030545,cpu_multinucleo; maquina=rtx3060
